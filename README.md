@@ -1,9 +1,14 @@
-# Claude Project Manager
+# PM Kit for Claude Code
 
 A PMI-aligned `.claude` boilerplate that turns Claude Code into a project management
 assistant. It follows PMI's five Process Groups and ten Knowledge Areas, with a practical
 working style: rich context, stated output format and audience, reasoning over lookup,
 paste-the-data-in, and human judgement on the political calls.
+
+> **Not affiliated with Anthropic.** This is an independent, community-made boilerplate.
+> "Claude" and "Claude Code" are products of Anthropic; this project is not endorsed by,
+> sponsored by, or otherwise affiliated with Anthropic. "PMI" and "PMBOK" are trademarks of
+> the Project Management Institute, which does not endorse this project either.
 
 ## Quick start
 1. Fill in **`project-context.md`** at the repo root (Claude reads it automatically).
@@ -88,3 +93,6 @@ Generated artifacts are suggested into `docs/` (e.g. `docs/charter.md`,
 ## Roadmap
 Planned PMI additions (WBS, schedule, cost/EVM, quality, resource, procurement, agile,
 gate reviews, issue/decision logs) are tracked in [`ROADMAP.md`](ROADMAP.md).
+
+## License
+Released under the [MIT License](LICENSE).
