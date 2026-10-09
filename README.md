@@ -39,6 +39,7 @@ paste-the-data-in, and human judgement on the political calls.
 │   ├── requirements-review.md  /requirements-review  → Requirements QA
 │   ├── weekly-monday.md      /weekly-monday    → Weekly status (Monday routine)
 │   ├── weekly-friday.md      /weekly-friday    → End-of-week loose-ends scan
+│   ├── import-project.md     /import-project   → Onboard an in-flight project
 │   └── project-check.md      /project-check    → Audit setup / import readiness
 └── skills/                   # Methodology packs (auto-trigger on matching tasks)
     ├── pmi-project-management/  # Master skill + templates/ (8 reusable templates)
@@ -57,10 +58,15 @@ paste-the-data-in, and human judgement on the political calls.
 | Executing | `/agenda`, `/minutes`, `/escalation` |
 | Monitoring & Controlling | `/status-report`, `/change-request`, `/weekly-monday`, `/weekly-friday` |
 | Closing | `/lessons-learned`, `/closure` |
-| Setup / any phase | `/project-check` (audit that the project is correctly set up or imported) |
+| Setup / any phase | `/import-project` (onboard an in-flight project), `/project-check` (audit it's correctly set up) |
 
 ## Importing an in-flight project
-To bring an already-started project into the kit:
+Fastest path — run **`/import-project`**: it interviews you for the context block, ingests
+whatever you paste (Jira/MS Project exports, old status emails, a charter draft, notes),
+sorts it into the right `docs/` files, stubs the rest from templates, and finishes with a
+readiness report.
+
+Prefer to do it by hand? The manual equivalent:
 1. Fill `project-context.md` and set **Current phase** to where the project actually is.
 2. Copy any existing artifacts (charter, risk register, latest status, stakeholder list,
    decisions) into the matching files under `docs/` — commands then update them in place.
