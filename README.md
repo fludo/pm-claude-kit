@@ -93,3 +93,6 @@ Generated artifacts are suggested into `docs/` (e.g. `docs/charter.md`,
 ## Roadmap
 Planned PMI additions (WBS, schedule, cost/EVM, quality, resource, procurement, agile,
 gate reviews, issue/decision logs) are tracked in [`ROADMAP.md`](ROADMAP.md).
+
+## License
+Released under the [MIT License](LICENSE).
