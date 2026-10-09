@@ -38,7 +38,8 @@ paste-the-data-in, and human judgement on the political calls.
 │   ├── stakeholder-analysis.md /stakeholder-analysis → Stakeholder map
 │   ├── requirements-review.md  /requirements-review  → Requirements QA
 │   ├── weekly-monday.md      /weekly-monday    → Weekly status (Monday routine)
-│   └── weekly-friday.md      /weekly-friday    → End-of-week loose-ends scan
+│   ├── weekly-friday.md      /weekly-friday    → End-of-week loose-ends scan
+│   └── project-check.md      /project-check    → Audit setup / import readiness
 └── skills/                   # Methodology packs (auto-trigger on matching tasks)
     ├── pmi-project-management/  # Master skill + templates/ (8 reusable templates)
     ├── risk-management/
@@ -56,6 +57,17 @@ paste-the-data-in, and human judgement on the political calls.
 | Executing | `/agenda`, `/minutes`, `/escalation` |
 | Monitoring & Controlling | `/status-report`, `/change-request`, `/weekly-monday`, `/weekly-friday` |
 | Closing | `/lessons-learned`, `/closure` |
+| Setup / any phase | `/project-check` (audit that the project is correctly set up or imported) |
+
+## Importing an in-flight project
+To bring an already-started project into the kit:
+1. Fill `project-context.md` and set **Current phase** to where the project actually is.
+2. Copy any existing artifacts (charter, risk register, latest status, stakeholder list,
+   decisions) into the matching files under `docs/` — commands then update them in place.
+3. Paste data that lives in other tools (Jira, MS Project, spreadsheets, email) when
+   running a command; Claude organises it and never invents figures.
+4. Run **`/project-check`** to see what's present, missing, stale, or inconsistent, then
+   let the suggested commands backfill the gaps.
 
 ## Ground rules Claude follows
 - Never reads live Jira/budgets/Project — **paste the data in**.
