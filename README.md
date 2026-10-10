@@ -45,13 +45,18 @@ paste-the-data-in, and human judgement on the political calls.
 │   ├── weekly-monday.md      /weekly-monday    → Weekly status (Monday routine)
 │   ├── weekly-friday.md      /weekly-friday    → End-of-week loose-ends scan
 │   ├── import-project.md     /import-project   → Onboard an in-flight project
-│   └── project-check.md      /project-check    → Audit setup / import readiness
+│   ├── project-check.md      /project-check    → Audit setup / import readiness
+│   ├── sprint-planning.md    /sprint-planning  → Iteration / sprint plan (agile)
+│   ├── backlog-refinement.md /backlog-refinement → Backlog readiness check (agile)
+│   ├── retro.md              /retro            → Iteration retrospective (agile)
+│   └── pi-planning-prep.md   /pi-planning-prep → Increment / PI planning prep (agile)
 └── skills/                   # Methodology packs (auto-trigger on matching tasks)
-    ├── pmi-project-management/  # Master skill + templates/ (8 reusable templates)
+    ├── pmi-project-management/  # Master skill + templates/ (12 reusable templates)
     ├── risk-management/
     ├── stakeholder-management/
     ├── status-reporting/
-    └── change-control/
+    ├── change-control/
+    └── agile-delivery/         # Methodology-agnostic: Scrum / Kanban / hybrid
 ```
 
 ## Mapping to PMI
@@ -64,6 +69,7 @@ paste-the-data-in, and human judgement on the political calls.
 | Monitoring & Controlling | `/status-report`, `/change-request`, `/weekly-monday`, `/weekly-friday` |
 | Closing | `/lessons-learned`, `/closure` |
 | Setup / any phase | `/import-project` (onboard an in-flight project), `/project-check` (audit it's correctly set up) |
+| Agile delivery (methodology-agnostic) | `/sprint-planning`, `/backlog-refinement`, `/retro`, `/pi-planning-prep` |
 
 ## Importing an in-flight project
 Fastest path — run **`/import-project`**: it interviews you for the context block, ingests
@@ -88,11 +94,14 @@ Prefer to do it by hand? The manual equivalent:
 - Reminds you to check data-governance policy before handling confidential data.
 
 Generated artifacts are suggested into `docs/` (e.g. `docs/charter.md`,
-`docs/risk-register.md`, `docs/status/`, `docs/meetings/`, `docs/changes/`).
+`docs/risk-register.md`, `docs/status/`, `docs/meetings/`, `docs/changes/`,
+`docs/sprints/`).
 
 ## Roadmap
-Planned PMI additions (WBS, schedule, cost/EVM, quality, resource, procurement, agile,
-gate reviews, issue/decision logs) are tracked in [`ROADMAP.md`](ROADMAP.md).
+A methodology-agnostic agile delivery set (iteration planning, backlog refinement,
+retrospectives, increment/PI planning prep) is now included. Remaining planned PMI
+additions (WBS, schedule, cost/EVM, quality, resource, procurement, gate reviews,
+issue/decision logs) are tracked in [`ROADMAP.md`](ROADMAP.md).
 
 ## License
 Released under the [MIT License](LICENSE).
