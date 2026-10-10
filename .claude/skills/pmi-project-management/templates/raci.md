@@ -1,6 +1,6 @@
 # RACI Matrix
 
-- **Project:** <name>   **Date:** <YYYY-MM-DD>
+- **Project:** <name> · **Date:** <YYYY-MM-DD>
 
 R = Responsible (does the work) · A = Accountable (owns it, one per row) ·
 C = Consulted (two-way) · I = Informed (one-way).

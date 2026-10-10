@@ -18,4 +18,5 @@ organisation. Add:
 - **Reporting cadence** — status reports and dashboards.
 
 Tie each line to a stakeholder need (run `/stakeholder-analysis` first if none exists).
+Use the template at `.claude/skills/pmi-project-management/templates/comms-plan.md`.
 Offer to save to `docs/comms-plan.md`.

@@ -15,3 +15,7 @@ Use the **requirements-analyst** agent. Produce:
 Rewrite unmeasurable requirements into testable form. Do not expand scope silently — label
 anything new as a candidate to confirm. If nothing is pasted, ask for the requirements or a
 file path.
+
+Use the template at `.claude/skills/pmi-project-management/templates/requirements.md`.
+Offer to save the reviewed requirements (with revised wording and findings) to
+`docs/requirements.md`.

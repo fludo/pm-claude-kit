@@ -1,6 +1,6 @@
 # Risk Register
 
-- **Project:** <name>   **Owner:** <PM>   **Last reviewed:** <YYYY-MM-DD>
+- **Project:** <name> · **Owner:** <PM> · **Last reviewed:** <YYYY-MM-DD>
 
 Probability & Impact scale: 1 = Very Low … 5 = Very High. Severity = Probability × Impact.
 

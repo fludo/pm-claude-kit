@@ -1,6 +1,6 @@
 # Status Report
 
-- **Project:** <name>   **Period:** <from–to>   **Author:** <PM>   **Date:** <YYYY-MM-DD>
+- **Project:** <name> · **Period:** <from–to> · **Author:** <PM> · **Date:** <YYYY-MM-DD>
 - **Overall status:** 🟢 Green / 🟡 Amber / 🔴 Red — <one-line rationale>
 
 ## Executive summary
