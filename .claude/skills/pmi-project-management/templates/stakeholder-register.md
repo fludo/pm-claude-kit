@@ -1,6 +1,6 @@
 # Stakeholder Register & Engagement Plan
 
-- **Project:** <name>   **Date:** <YYYY-MM-DD>
+- **Project:** <name> · **Date:** <YYYY-MM-DD>
 
 ## Register
 | Stakeholder | Role | Interests | Concerns | Influence (H/M/L) | Current engagement | Desired engagement | Key message |

@@ -1,7 +1,7 @@
 # Change Request
 
-- **CR ID:** CR-NNN   **Title:** <short title>
-- **Date:** <YYYY-MM-DD>   **Requested by:** <name>
+- **CR ID:** CR-NNN · **Title:** <short title>
+- **Date:** <YYYY-MM-DD> · **Requested by:** <name>
 
 ## 1. Description of change
 <What is changing.>

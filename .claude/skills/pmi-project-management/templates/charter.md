@@ -1,8 +1,8 @@
 # Project Charter / Project Initiation Document (PID)
 
 - **Project:** <name / code>
-- **Sponsor:** <name>   **Project Manager:** <name>
-- **Date:** <YYYY-MM-DD>   **Version:** 0.1 (draft)
+- **Sponsor:** <name> · **Project Manager:** <name>
+- **Date:** <YYYY-MM-DD> · **Version:** 0.1 (draft)
 
 ## 1. Purpose & business case
 <Why this project exists; the problem or opportunity; expected value.>

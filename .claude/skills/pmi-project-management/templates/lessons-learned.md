@@ -1,6 +1,6 @@
 # Lessons Learned
 
-- **Project / phase:** <name>   **Period:** <from–to>   **Participants:** <names>
+- **Project / phase:** <name> · **Period:** <from–to> · **Participants:** <names>
 
 ## What went well (repeat)
 | Observation | Practice to repeat |

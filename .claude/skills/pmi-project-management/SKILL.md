@@ -37,6 +37,8 @@ Reusable starting points live in `templates/`:
 - `status-report.md` — period status report
 - `raci.md` — responsibility assignment matrix
 - `change-request.md` — change request
+- `requirements.md` — requirements register + review findings
+- `comms-plan.md` — communications management plan
 - `stakeholder-register.md` — stakeholder analysis + engagement
 - `lessons-learned.md` — lessons learned
 - `closure.md` — project closure summary

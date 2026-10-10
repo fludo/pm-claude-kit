@@ -1,6 +1,6 @@
 # Project Closure Summary
 
-- **Project:** <name>   **PM:** <name>   **Closure date:** <YYYY-MM-DD>
+- **Project:** <name> · **PM:** <name> · **Closure date:** <YYYY-MM-DD>
 
 ## 1. Summary — objectives vs. outcomes
 | Objective | Target | Outcome | Met? |
