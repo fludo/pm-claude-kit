@@ -8,6 +8,10 @@ Agile ceremony · PMI Process Group: **Planning** · Knowledge Area: **Scope**.
 
 Items: $ARGUMENTS
 
+**Data source:** check the **Jira / Atlassian MCP access** switch in `project-context.md`
+(semantics in CLAUDE.md §1). If `allow` and an Atlassian MCP is connected, you may pull the
+backlog items live from Jira and note the source + date; otherwise paste-in only.
+
 Use the **requirements-analyst** agent for wording quality. For each item apply a
 **definition-of-ready** check:
 - **Clear** — one interpretation; no vague terms without a measure.
