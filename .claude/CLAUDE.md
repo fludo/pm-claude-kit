@@ -24,6 +24,11 @@ ask once, then proceed with a clearly labelled assumption.
 
 > If a `project-context.md` file exists at the repo root, read it and use it as the
 > authoritative context block instead of asking.
+>
+> Similarly, if a `project-status.md` file exists at the repo root, treat it as the
+> current status input for `/status-report` and `/weekly-monday` — the user keeps the
+> latest progress, milestones, budget, risks, and issues there instead of re-pasting them.
+> It holds real data only; never invent figures to fill it.
 
 ---
 
@@ -46,7 +51,8 @@ user can see where it fits in the life cycle.
 - **`commands/`** — slash commands for one-shot artifacts (`/charter`, `/risk-register`,
   `/status-report`, `/raci`, `/comms-plan`, `/agenda`, `/minutes`, `/change-request`,
   `/lessons-learned`, `/closure`, `/escalation`, `/stakeholder-analysis`,
-  `/requirements-review`, `/weekly-monday`, `/weekly-friday`).
+  `/requirements-review`, `/weekly-monday`, `/weekly-friday`, `/import-project`,
+  `/project-check`).
 - **`agents/`** — specialist subagents for multi-step reasoning (risk, stakeholder,
   status, requirements, meetings, and a critical thinking partner).
 - **`skills/`** — deeper methodology packs with reusable templates, auto-loaded when the
