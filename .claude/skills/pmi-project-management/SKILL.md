@@ -39,6 +39,8 @@ Reusable starting points live in `templates/`:
 - `change-request.md` — change request
 - `requirements.md` — requirements register + review findings
 - `comms-plan.md` — communications management plan
+- `sprint-plan.md` — iteration / sprint plan (agile)
+- `retro.md` — iteration retrospective (agile)
 - `stakeholder-register.md` — stakeholder analysis + engagement
 - `lessons-learned.md` — lessons learned
 - `closure.md` — project closure summary

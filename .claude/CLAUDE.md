@@ -52,12 +52,13 @@ user can see where it fits in the life cycle.
   `/status-report`, `/raci`, `/comms-plan`, `/agenda`, `/minutes`, `/change-request`,
   `/lessons-learned`, `/closure`, `/escalation`, `/stakeholder-analysis`,
   `/requirements-review`, `/weekly-monday`, `/weekly-friday`, `/import-project`,
-  `/project-check`).
+  `/project-check`). Agile delivery (methodology-agnostic — Scrum / Kanban / hybrid):
+  `/sprint-planning`, `/backlog-refinement`, `/retro`, `/pi-planning-prep`.
 - **`agents/`** — specialist subagents for multi-step reasoning (risk, stakeholder,
   status, requirements, meetings, and a critical thinking partner).
 - **`skills/`** — deeper methodology packs with reusable templates, auto-loaded when the
   task matches (charter, risk, status, stakeholder, change control, lessons learned,
-  closure).
+  closure, and agile delivery).
 
 ---
 
