@@ -9,6 +9,11 @@ Agile ceremony · PMI Process Group: **Planning** · Knowledge Areas: **Scope + 
 
 Input: $ARGUMENTS
 
+**Data source:** check the **Jira / Atlassian MCP access** switch in `project-context.md`
+(semantics in CLAUDE.md §1). If `allow` and an Atlassian MCP is connected, you may pull the
+candidate epics/features, dependencies, and capacity live from Jira and note the source +
+date; otherwise paste-in only.
+
 Methodology-agnostic: works whether or not the team runs SAFe. Do not invent capacity,
 velocity, or dates. Produce:
 

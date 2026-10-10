@@ -8,8 +8,13 @@ PMI Process Group: **Monitoring & Controlling** · Knowledge Area: **Communicati
 
 Project data: $ARGUMENTS
 
-If no data is pasted, ask the user to paste progress, milestones, budget, risks, and
-issues — or point to `project-status.md`. Do not invent any metric, date, or progress.
+**Data source:** check the **Jira / Atlassian MCP access** switch in `project-context.md`
+(semantics in CLAUDE.md §1). If `allow` and an Atlassian MCP is connected, you may pull the
+status live from Jira and note the source + date; otherwise paste-in only.
+
+If no data is pasted (and no live source is permitted), ask the user to paste progress,
+milestones, budget, risks, and issues — or point to `project-status.md`. Do not invent any
+metric, date, or progress.
 
 Follow the **status-reporter** structure: header + RAG, executive summary, progress,
 milestones table, budget/schedule (if provided), top risks & issues, decisions/escalations

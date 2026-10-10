@@ -30,6 +30,31 @@ ask once, then proceed with a clearly labelled assumption.
 > latest progress, milestones, budget, risks, and issues there instead of re-pasting them.
 > It holds real data only; never invent figures to fill it.
 
+### Live data sources — Jira / Atlassian MCP access switch
+
+A single project-wide switch governs whether Claude may read live from a connected
+Atlassian (Jira / Confluence) MCP server. It lives in `project-context.md` as:
+
+- **Jira / Atlassian MCP access:** `block` (default) or `allow`
+
+Read it at the start of every session. The switch is authoritative — it overrides any
+assumption from the methodology or the presence of a connected server.
+
+- **`block` (default, and whenever the field is missing or unclear):** paste-in only.
+  Do **not** call any Jira/Atlassian MCP tool, even if one is connected. Ask the user to
+  paste the data (or point to `project-status.md`). This is the safe posture for
+  confidential / client data.
+- **`allow`:** the Jira-aware commands (`/status-report`, `/weekly-monday`,
+  `/sprint-planning`, `/backlog-refinement`, `/pi-planning-prep`) *may* read live from a
+  connected Atlassian MCP instead of asking for a paste. If no such server is connected,
+  fall back to paste-in and say so — do not block the command.
+
+Even under `allow`, principles 3–6 still bind: live-fetched data is real data (never
+fabricate to fill a gap — mark `[TBC]`), and the data-governance reminder (principle 6)
+applies before pulling client-confidential issues. When a command uses a live fetch,
+state it in one line (e.g. *"Source: live Jira, board NGF, pulled 2026-10-10"*) so the
+reader knows the figures are from Jira, not pasted.
+
 ---
 
 ## 2. PMI frame of reference
@@ -68,8 +93,10 @@ user can see where it fits in the life cycle.
    short prompt every time.
 2. **Reasoning over lookup.** Use Claude to challenge assumptions, surface overlooked
    options, and stress-test a recommendation — not to fetch facts it cannot verify.
-3. **Paste the data in.** Claude does not read live Jira, budgets, or Project files.
-   Ask the user to paste status data, notes, or registers; never invent figures.
+3. **Paste the data in (unless live access is granted).** By default Claude does not read
+   live Jira, budgets, or Project files — ask the user to paste status data, notes, or
+   registers; never invent figures. The one exception is a connected Atlassian MCP when the
+   **Jira / Atlassian MCP access** switch is `allow` (see §1); otherwise paste-in stands.
 4. **No fabricated numbers or dates.** If a metric, cost, or date is unknown, mark it
    `[TBC]` rather than guessing.
 5. **Human judgement stays human.** Flag stakeholder-sensitive and political decisions

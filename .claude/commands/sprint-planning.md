@@ -8,8 +8,13 @@ Agile ceremony · PMI Process Group: **Planning** · Knowledge Areas: **Scope + 
 
 Input: $ARGUMENTS
 
-If capacity, the candidate backlog, or the goal aren't given, ask once — do not invent
-velocity, estimates, or capacity. Produce:
+**Data source:** check the **Jira / Atlassian MCP access** switch in `project-context.md`
+(semantics in CLAUDE.md §1). If `allow` and an Atlassian MCP is connected, you may pull the
+candidate backlog, estimates, and capacity live from Jira and note the source + date;
+otherwise paste-in only.
+
+If capacity, the candidate backlog, or the goal aren't given (and no live source is
+permitted), ask once — do not invent velocity, estimates, or capacity. Produce:
 
 1. **Iteration goal** — one sentence the team can rally behind.
 2. **Capacity** — available capacity this iteration (from data provided; `[TBC]` if not).
