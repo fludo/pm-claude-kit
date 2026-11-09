@@ -9,7 +9,7 @@ status becomes "Superseded by Dn".
 
 | ID | Date | Decision | Context / why | Options considered | Decided by | Source | Impact (scope / schedule / cost; linked CR, risk, issue) | Status |
 |----|------|----------|---------------|--------------------|------------|--------|----------------------------------------------------------|--------|
-| D1 |      |          |               |                    | [TBC] if not stated | <minutes file, email, meeting> |  | Active |
+| D1 |      |          |               |                    | <named person or body> | <minutes file, email, meeting> |  | Active |
 
 ## Decisions pending
 | Decision needed | Needed by | Who decides |

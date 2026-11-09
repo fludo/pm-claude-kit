@@ -14,5 +14,6 @@ Follow the steps in `.claude/commands/status-report.md`, with these weekly setti
   week old, say so and ask whether to proceed or wait for an update.
 - **Week-over-week** — the "Changes since last report" section is mandatory: compare with
   last week's report in `docs/status/` and list what moved.
-- **Loose ends** — if last Friday's scan or the latest minutes left actions without owners,
-  list them under "Decisions / escalations needed".
+- **Loose ends** — if the week's minutes in `docs/meetings/` (or the latest minutes, if
+  none are from that week) left actions without owners, list them under "Decisions /
+  escalations needed".

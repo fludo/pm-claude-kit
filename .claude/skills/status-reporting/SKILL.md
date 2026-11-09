@@ -9,9 +9,10 @@ Convert the data the user pastes (or `project-status.md`) into an audience-ready
 **Never invent** progress, metrics, or dates — organise what you're given and mark gaps
 `[TBC]`.
 
-**Inputs, in order:** data pasted in the conversation; else `project-status.md` at the repo
-root; else ask. Also read the newest report in `docs/status/` and `docs/risk-register.md`
-for continuity.
+**Inputs:** `project-status.md` at the repo root plus any data pasted in the conversation;
+where they differ, the pasted data wins. A file still holding only template placeholders
+counts as missing. With neither, ask. Also read the newest report in `docs/status/` dated
+before this one and `docs/risk-register.md` for continuity.
 
 **RAG:** derive it from the *Status tolerances* in the project context and give a one-line
 rationale that names the tolerance. If the field says "kit defaults", apply the thresholds
@@ -23,7 +24,8 @@ moved, and carried-over actions. If the new data contradicts the last report, sa
 
 **Writing:** an executive summary a sponsor can read in 20 seconds — where we are, whether
 we are on track, the one thing needing attention. Tables for anything with dates or
-numbers. Include budget/schedule only if data was provided. Separate facts from PM
+numbers. Always show budget and schedule: if a measure has no data, mark it `[TBC]`, list
+it under "Data I still need", and report no better than Amber. Separate facts from PM
 judgement. End with "Data I still need".
 
 Use the template at `.claude/skills/pmi-project-management/templates/status-report.md`, or
