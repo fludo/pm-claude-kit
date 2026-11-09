@@ -3,14 +3,24 @@
   "permissions": {
     "allow": [
       "Read",
-      "Write",
-      "Edit",
       "Glob",
-      "Grep"
+      "Grep",
+      "Edit(/docs/**)",
+      "Edit(/project-context.md)",
+      "Edit(/project-status.md)"
     ],
     "ask": [
       "WebFetch",
       "WebSearch"
+    ],
+    "deny": [
+      "Read(/.env)",
+      "Read(/.env.*)",
+      "Read(/**/.env)",
+      "Read(/**/.env.*)",
+      "Read(/**/*.pem)",
+      "Read(/**/*.key)",
+      "Read(/secrets/**)"
     ]
   }
 }

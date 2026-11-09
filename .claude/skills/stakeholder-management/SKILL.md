@@ -11,7 +11,7 @@ and purpose.
 **Analysis:** build the register and classify on a power/interest grid (Manage closely ·
 Keep satisfied · Keep informed · Monitor). For each stakeholder capture interests,
 concerns, influence, current vs. desired engagement, and the key message. Use the template
-at `../pmi-project-management/templates/stakeholder-register.md`.
+at `.claude/skills/pmi-project-management/templates/stakeholder-register.md`.
 
 **Communications:** state audience and purpose up front. For executive comms use
 situation → impact → options → recommendation → ask. For **escalation emails**:
@@ -22,4 +22,5 @@ make the ask → maintain confidence.
 points, likely objections, and measured responses.
 
 Never fabricate status, dates, or commitments (`[TBC]`). Flag political judgement calls for
-the PM. For deeper work, delegate to the `stakeholder-analyst` agent.
+the PM. Draft inline; to have a saved draft read as its recipient would, use the
+`stakeholder-analyst` agent and pass it the file path or the full text.

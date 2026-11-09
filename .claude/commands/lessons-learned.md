@@ -4,19 +4,18 @@ argument-hint: [phase or project, paste inputs if any]
 ---
 
 Produce a **lessons-learned report**.
-PMI Process Group: **Closing** (also mid-project retros) · Knowledge Area: **Integration**.
+PMI Process Group: **Closing** (also at phase end) · Knowledge Area: **Integration**.
+(For a single iteration, use `/retro` instead.)
 
 Input: $ARGUMENTS
 
-Structure:
-1. **Context** — project/phase, period, participants.
-2. **What went well** — with the practice to repeat.
-3. **What went poorly** — root cause, not just symptom.
-4. **What we'd do differently** — specific, actionable.
-5. **Lessons by knowledge area** — scope, schedule, cost, risk, communications,
-   stakeholder, resource, quality, procurement.
-6. **Recommendations** — table: lesson | recommended action | owner | target (future
-   project/phase).
+Work inline in this conversation — do not delegate to a subagent, which cannot see what
+was pasted here or ask the user questions. If inputs are thin, pose facilitation questions to draw out lessons rather than
+inventing them.
 
-If inputs are thin, pose facilitation questions to draw out lessons rather than inventing
-them. Offer to save to `docs/lessons-learned.md`.
+1. **Read first** — `docs/lessons-learned.md` if it exists (append the new phase; do not
+   overwrite earlier ones), plus retros in `docs/sprints/`, `docs/changes/`, and the
+   closed and occurred risks in `docs/risk-register.md` as evidence, where present.
+2. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/lessons-learned.md`. "What went poorly" names a
+   root cause, not a symptom. Every recommendation has an owner or `[owner TBC]`.
+3. **Save** — offer `docs/lessons-learned.md`.

@@ -10,13 +10,18 @@ Follow the four-step PMI cycle:
 1. **Identify** across categories (technical, schedule, cost, resource, external,
    regulatory, organisational, stakeholder). Capture both threats and opportunities. Phrase
    each as **cause → event → effect** so it is testable.
-2. **Analyse** — Probability (1–5) × Impact (1–5) → Severity. Note the objective threatened.
+2. **Analyse** — Probability × Impact → Severity, using the *Risk scoring* scale in the
+   project context or, if none is set, the 1–5 scale and severity bands in the template.
+   Use one scale throughout a register. Note the objective threatened.
 3. **Respond** — Threats: Avoid/Mitigate/Transfer/Accept. Opportunities:
    Exploit/Enhance/Share/Accept. Give a concrete action and an owner.
 4. **Monitor** — an **early-warning indicator** per top risk and a review cadence.
 
-Use the template at
-`../pmi-project-management/templates/risk-register.md`. After the first pass, actively hunt
+Use the template at `.claude/skills/pmi-project-management/templates/risk-register.md`.
+When a register already exists, update it in place: keep IDs, change status rather than
+deleting rows. A risk that has occurred becomes *Realised* and moves to the issue log
+(`docs/issue-log.md`). After the first pass, actively hunt
 for risks commonly missed for the project's sector/technology and list them as "Candidate
-risks to confirm". Never present estimated probabilities as if measured. For deeper or
-multi-step work, delegate to the `risk-manager` agent. End with "Open questions for the PM".
+risks to confirm". Never present estimated probabilities as if measured. Draft inline; for
+a fresh-eyes challenge of a saved register, use the `risk-manager` agent and pass it the
+file path. End with "Open questions for the PM".

@@ -8,11 +8,13 @@ PMI Process Group: **Executing** · Knowledge Area: **Communications**.
 
 Input: $ARGUMENTS
 
-Use the **meeting-scribe** agent's agenda method:
-- Objective and desired outcome.
-- Timed agenda table: item | purpose (inform/discuss/decide) | owner | minutes.
-- For contentious items, **likely points of disagreement** with a prepared, balanced
-  framing to keep discussion productive.
-- Required pre-reads and the decisions that must be made.
+Work inline in this conversation — do not delegate to a subagent, which cannot see what
+was pasted here or ask the user questions. If the purpose, attendees, or topics are missing, ask once.
 
-If attendees or topics are missing, ask once. Offer to save to `docs/meetings/`.
+1. **Read first** — the most recent minutes in `docs/meetings/`, if any. Carry forward open
+   actions and parked items relevant to this meeting.
+2. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/agenda.md`. Mark each item inform / discuss /
+   decide. For contentious items, give the likely points of disagreement and a balanced
+   framing that keeps the discussion productive.
+3. **Close** with "Assumptions / open questions".
+4. **Save** — offer `docs/meetings/agenda-YYYY-MM-DD.md` (the meeting date).
