@@ -22,6 +22,12 @@ the **data governance note** (what may be pasted here).
 Also ask: *where does the live project data live?* (Jira, MS Project, spreadsheets,
 email/docs) so you know what they can paste.
 
+For the status tolerances and the risk scoring, show the kit defaults and ask the user to
+give their own or keep them. In `.claude/skills/pmi-project-management/templates/`, the
+defaults are the RAG basis comment in `status-report.md` and the scale and severity bands
+in `risk-register.md`. Ask this even if the rest of the context is filled, unless the field
+already holds project-specific values.
+
 ## Step 2 — Ingest what exists
 Accept whatever the user pastes or points to (exports, notes, old status emails, a charter
 draft, a task list). **Organise it; never invent.** Sort the material into the kit's
@@ -47,7 +53,9 @@ For any artifact with no source material, create a **stub** from the matching te
 
 ## Step 3 — Write the files
 1. Write/update `project-context.md` with the interview answers. Leave a field as its
-   `<...>` prompt if the user did not answer it.
+   `<...>` prompt if the user did not answer it. Write the status tolerances and risk
+   scoring as the user's values or, if they kept the defaults, as exactly `kit defaults`
+   and `kit default` respectively, so `/project-check` can tell which is in force.
 2. Create `project-status.md` at the repo root from the `project-status.md` template,
    filled only from the latest status material.
 3. Create each target `docs/` file above, mapping the ingested material into the template
@@ -59,7 +67,8 @@ For any artifact with no source material, create a **stub** from the matching te
 ## Step 4 — Verify
 Run the same checks as `/project-check` and output:
 - **What was imported** — file-by-file, with a one-line note each.
-- **What's still needed** — the `[TBC]` items and which tool/source to pull them from.
+- **What's still needed** — the `[TBC]` items and which tool/source to pull them from, and
+  whether RAG or risk scoring is still on kit defaults.
 - **Suggested next commands** — e.g. `/risk-register` to expand the risk stub,
   `/stakeholder-analysis` to classify stakeholders, `/status-report` for the next cycle.
 - **Overall readiness:** 🟢 / 🟡 / 🔴 with a one-line rationale.

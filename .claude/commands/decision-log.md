@@ -26,4 +26,5 @@ was pasted here or ask the user questions.
    decisions in this period's minutes that are not in the log.
 6. **Route** — flag a decision that changes scope, schedule, or cost as needing a
    `/change-request`, and one that creates or removes a risk for the risk register.
-7. **Save** — offer `docs/decision-log.md`, summarising the rows added or superseded first.
+7. **Close** with "Assumptions / open questions".
+8. **Save** — offer `docs/decision-log.md`, summarising the rows added or superseded first.

@@ -24,3 +24,7 @@
 ## Risks or changes raised
 <Anything that should flow to the risk register or change control.>
 - …
+
+## Assumptions / open questions
+<Where the notes were unclear, how they were read, and what the PM must confirm.>
+- …

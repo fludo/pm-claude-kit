@@ -18,6 +18,17 @@ phase. If the file is missing, that's the top finding. Call out separately if **
 tolerances**, **Risk scoring**, or the **Data governance note** are unfilled: RAG and risk
 severity fall back to kit defaults, and the data-governance reminder keeps firing.
 
+Report the **RAG basis** (Status tolerances) and the **risk scoring basis** (Risk scoring),
+each as one of:
+- **Project-specific** — the field holds the project's own values.
+- **Kit default** — the field says "kit defaults" or "kit default", or repeats the values
+  in `.claude/skills/pmi-project-management/templates/`: the RAG basis comment in
+  `status-report.md`, or the scale and severity bands in `risk-register.md`.
+- **Unset** — the field is unfilled, so the kit default applies as PM judgement.
+
+Anything but project-specific is ⚠️ in the checklist and a top gap. The fix is to agree
+the values and set the field directly, or run `/import-project`.
+
 Also check `project-status.md` (repo root): present or missing, and its "As of" date. It
 is optional before Executing; from Executing onward a missing file is a gap.
 

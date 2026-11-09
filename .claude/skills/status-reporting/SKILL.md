@@ -14,9 +14,9 @@ root; else ask. Also read the newest report in `docs/status/` and `docs/risk-reg
 for continuity.
 
 **RAG:** derive it from the *Status tolerances* in the project context and give a one-line
-rationale that names the tolerance. If none are set, use the default definitions in the
-template and write "PM judgement — tolerances [TBC]". Do not let the RAG drift from the
-previous report without saying what changed.
+rationale that names the tolerance. If the field says "kit defaults", apply the thresholds
+in the template. If it is unfilled, apply them and write "PM judgement — tolerances [TBC]".
+Do not let the RAG drift from the previous report without saying what changed.
 
 **Continuity:** state the trend against the last report, every milestone forecast that
 moved, and carried-over actions. If the new data contradicts the last report, say so.

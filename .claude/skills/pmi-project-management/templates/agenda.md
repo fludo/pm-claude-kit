@@ -25,3 +25,7 @@
 
 ## Decisions that must be made
 - …
+
+## Assumptions / open questions
+<What was assumed about attendees, timing, or topics, and what the PM must confirm.>
+- …

@@ -15,3 +15,7 @@ status becomes "Superseded by Dn".
 | Decision needed | Needed by | Who decides |
 |-----------------|-----------|-------------|
 |                 |           |             |
+
+## Assumptions / open questions
+<Unclear authority, reasons, or impact, and what the PM must confirm.>
+- …

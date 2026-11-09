@@ -20,4 +20,5 @@ was pasted here or ask the user questions. If nothing is pasted, ask for the not
 3. **Route** — list decisions to add to `docs/decision-log.md`, issues to add to
    `docs/issue-log.md`, risks raised that are not in `docs/risk-register.md`, and changes
    that need a `/change-request`. Do not update those files without the user's go-ahead.
-4. **Save** — offer `docs/meetings/minutes-YYYY-MM-DD.md` (the meeting date).
+4. **Close** with "Assumptions / open questions".
+5. **Save** — offer `docs/meetings/minutes-YYYY-MM-DD.md` (the meeting date).
