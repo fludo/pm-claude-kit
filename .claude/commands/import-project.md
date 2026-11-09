@@ -38,6 +38,8 @@ artifacts:
 | Requirements / backlog | `docs/requirements.md` |
 | Meeting notes / decisions | `docs/meetings/` |
 | Change requests / variations | `docs/changes/` |
+| Problems already happening / blockers | `docs/issue-log.md` |
+| Decisions already taken (with who decided) | `docs/decision-log.md` |
 
 For any artifact with no source material, create a **stub** from the matching template in
 `.claude/skills/pmi-project-management/templates/`, filled only with what's known and

@@ -21,6 +21,14 @@ severity fall back to kit defaults, and the data-governance reminder keeps firin
 Also check `project-status.md` (repo root): present or missing, and its "As of" date. It
 is optional before Executing; from Executing onward a missing file is a gap.
 
+**1b. Context the docs already state**
+For every context field that is unfilled, look for the value in `docs/` (the charter header
+and its governance, constraints, and stakeholder sections are the usual places). Build a
+table: field | proposed value | source (file and section). Propose only values the docs
+state outright — never infer one, and leave a field unproposed if the docs conflict or are
+silent. If **Current phase** is unfilled but a doc states it, use that phase for step 2 and
+label it an assumption.
+
 **2. Expected artifacts by phase**
 Based on the current phase, check `docs/` for the artifacts that should exist by now
 (earlier-phase artifacts should already be present):
@@ -29,7 +37,7 @@ Based on the current phase, check `docs/` for the artifacts that should exist by
 |---|---|
 | Initiating | `charter.md`, `stakeholders.md` (initial) |
 | Planning | + `risk-register.md`, `raci.md`, `comms-plan.md`, `requirements.md` |
-| Executing | + at least one `status/` report, `meetings/` records |
+| Executing | + at least one `status/` report, `meetings/` records, `issue-log.md`, `decision-log.md` |
 | Monitoring & Controlling | + recent `status/` report, `changes/` log if any CRs |
 | Closing | + `lessons-learned.md`, `closure.md` |
 
@@ -44,6 +52,12 @@ For the artifacts that exist, spot-check:
   refers to the status tolerances or is labelled PM judgement.
 - **Stakeholders** — each has a desired engagement level and a key message.
 - **Charter** — scope has explicit exclusions; objectives have success measures.
+- **Issue log** — every open issue has an owner, a next action, and a target date; none is
+  overdue without being escalated.
+- **Decision log** — every decision names who decided it and a source; decisions in the
+  minutes appear in the log.
+- **Cross-doc** — risks marked *Realised* have a matching issue; owners named in the risk
+  register and issue log appear in the stakeholder register.
 - **Cross-doc** — stakeholders named in the charter appear in the stakeholder register;
   top charter risks appear in the risk register.
 
@@ -61,10 +75,12 @@ Count unresolved `[TBC]` markers and any remaining template angle-bracket prompt
 ## Output
 
 1. **Overall readiness:** 🟢 Ready / 🟡 Partial / 🔴 Not set up — one-line rationale.
-2. **Checklist table:** item | status (✅ / ⚠️ / ❌) | note.
-3. **Top gaps to fix** — ordered, each with the command that fixes it
+2. **Proposed context block** — the table from step 1b, if any field can be filled from
+   the docs, followed by the fields only the PM can supply.
+3. **Checklist table:** item | status (✅ / ⚠️ / ❌) | note.
+4. **Top gaps to fix** — ordered, each with the command that fixes it
    (e.g. "No risk register → run `/risk-register`").
-4. **Open questions** — anything only the PM can confirm.
+5. **Open questions** — anything only the PM can confirm.
 
-End by offering to action the top gaps (fill context fields, scaffold missing docs, etc.)
-on the user's go-ahead. Never fabricate data to make a check pass.
+End by offering to action the top gaps on the user's go-ahead — first of all, writing the
+proposed context values into `project-context.md` — then scaffolding missing docs. Never fabricate data to make a check pass.

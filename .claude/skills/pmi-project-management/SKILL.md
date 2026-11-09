@@ -1,6 +1,6 @@
 ---
 name: pmi-project-management
-description: Life-cycle frame and shared templates for the PM kit. Use when the task spans several PM artifacts, asks where something fits in the PMI Process Groups or Knowledge Areas, asks which artifact or command to use next, or needs an artifact with no dedicated skill (charter/PID, RACI, requirements, communications plan, meeting agenda/minutes, lessons learned, closure). Risk, stakeholder, status, change-control, and agile work have their own skills — prefer those.
+description: Life-cycle frame and shared templates for the PM kit. Use when the task spans several PM artifacts, asks where something fits in the PMI Process Groups or Knowledge Areas, asks which artifact or command to use next, or needs an artifact with no dedicated skill (charter/PID, RACI, requirements, communications plan, meeting agenda/minutes, lessons learned, closure, issue log, decision log). Risk, stakeholder, status, change-control, and agile work have their own skills — prefer those.
 ---
 
 # PMI Project Management
@@ -23,7 +23,7 @@ Name the **Process Group** and **Knowledge Area** each artifact serves.
 | Initiating | Charter / PID, initial stakeholder register |
 | Planning | Scope & requirements, WBS, schedule, budget, RACI, risk register, comms plan |
 | Executing | Meeting agendas/minutes, status updates, stakeholder comms |
-| Monitoring & Controlling | Status reports, change requests, risk reviews, variance analysis |
+| Monitoring & Controlling | Status reports, change requests, risk reviews, issue log, decision log, variance analysis |
 | Closing | Lessons learned, closure summary, benefits handover |
 
 **Knowledge Areas:** Integration · Scope · Schedule · Cost · Quality · Resource ·
@@ -44,6 +44,8 @@ to the project context; do not restate its structure elsewhere.
 | `comms-plan.md` | Communications management plan | `/comms-plan` |
 | `agenda.md` | Meeting agenda | `/agenda` |
 | `minutes.md` | Meeting minutes | `/minutes` |
+| `issue-log.md` | Issue log (things that have already happened) | `/issue-log` |
+| `decision-log.md` | Decision log | `/decision-log` |
 | `project-status.md` | Current status data the PM maintains (copied to the repo root) | `/import-project` |
 | `status-report.md` | Period status report, default RAG definitions | `/status-report`, `/weekly-monday` |
 | `change-request.md` | Change request | `/change-request` |

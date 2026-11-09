@@ -47,6 +47,8 @@ paste-the-data-in, and human judgement on the political calls.
 │   ├── requirements-review.md  /requirements-review  → Requirements QA
 │   ├── weekly-monday.md      /weekly-monday    → Weekly status (Monday routine)
 │   ├── weekly-friday.md      /weekly-friday    → End-of-week loose-ends scan
+│   ├── issue-log.md          /issue-log        → Issue log
+│   ├── decision-log.md       /decision-log     → Decision log
 │   ├── import-project.md     /import-project   → Onboard an in-flight project
 │   ├── project-check.md      /project-check    → Audit setup / import readiness
 │   ├── sprint-planning.md    /sprint-planning  → Iteration / sprint plan (agile)
@@ -54,7 +56,7 @@ paste-the-data-in, and human judgement on the political calls.
 │   ├── retro.md              /retro            → Iteration retrospective (agile)
 │   └── pi-planning-prep.md   /pi-planning-prep → Increment / PI planning prep (agile)
 └── skills/                   # Methodology packs (auto-trigger on matching tasks)
-    ├── pmi-project-management/  # Life-cycle frame + templates/ (15 templates, the single source for structure)
+    ├── pmi-project-management/  # Life-cycle frame + templates/ (17 templates, the single source for structure)
     ├── risk-management/
     ├── stakeholder-management/
     ├── status-reporting/
@@ -69,7 +71,7 @@ paste-the-data-in, and human judgement on the political calls.
 | Initiating | `/charter`, `/stakeholder-analysis` |
 | Planning | `/risk-register`, `/raci`, `/comms-plan`, `/requirements-review` |
 | Executing | `/agenda`, `/minutes`, `/escalation` |
-| Monitoring & Controlling | `/status-report`, `/change-request`, `/weekly-monday`, `/weekly-friday` |
+| Monitoring & Controlling | `/status-report`, `/change-request`, `/issue-log`, `/decision-log`, `/weekly-monday`, `/weekly-friday` |
 | Closing | `/lessons-learned`, `/closure` |
 | Setup / any phase | `/import-project` (onboard an in-flight project), `/project-check` (audit it's correctly set up) |
 | Agile delivery (methodology-agnostic) | `/sprint-planning`, `/backlog-refinement`, `/retro`, `/pi-planning-prep` |
@@ -86,8 +88,9 @@ Prefer to do it by hand? The manual equivalent:
    decisions) into the matching files under `docs/` — commands then update them in place.
 3. Paste data that lives in other tools (Jira, MS Project, spreadsheets, email) when
    running a command; Claude organises it and never invents figures.
-4. Run **`/project-check`** to see what's present, missing, stale, or inconsistent, then
-   let the suggested commands backfill the gaps.
+4. Run **`/project-check`** to see what's present, missing, stale, or inconsistent. It also
+   proposes `project-context.md` values that your existing docs already state. Then let
+   the suggested commands backfill the gaps.
 
 ## Ground rules Claude follows
 - Never reads live Jira/budgets/Project — **paste the data in**.
@@ -110,8 +113,8 @@ Generated artifacts are suggested into `docs/` (e.g. `docs/charter.md`,
 ## Roadmap
 A methodology-agnostic agile delivery set (iteration planning, backlog refinement,
 retrospectives, increment/PI planning prep) is now included. Remaining planned PMI
-additions (WBS, schedule, cost/EVM, quality, resource, procurement, gate reviews,
-issue/decision logs) are tracked in [`ROADMAP.md`](ROADMAP.md).
+additions (WBS, schedule, cost/EVM, quality, resource, procurement, gate
+reviews) are tracked in [`ROADMAP.md`](ROADMAP.md).
 
 ## License
 Released under the [MIT License](LICENSE).

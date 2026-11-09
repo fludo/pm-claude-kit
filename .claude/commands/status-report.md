@@ -16,8 +16,9 @@ was pasted here or ask the user questions.
    milestones, budget, risks, and issues, and stop until they do. Never invent a metric,
    date, or progress.
 2. **Read for continuity** — the newest report in `docs/status/` (by the date in its
-   filename) and `docs/risk-register.md`, if present. Use them for the trend, milestone
-   forecast movements, carried-over actions, and top risks. If the new data contradicts the
+   filename), `docs/risk-register.md`, and `docs/issue-log.md`, if present. Use them for
+   the trend, milestone forecast movements, carried-over actions, and top risks and issues.
+   Take "Decisions / escalations needed" from the pending section of `docs/decision-log.md`. If the new data contradicts the
    previous report, say so rather than smoothing it over.
 3. **Draft** following the `status-reporting` skill and the structure in
    `.claude/skills/pmi-project-management/templates/status-report.md`. If the user has a house template, follow it exactly instead.

@@ -10,15 +10,17 @@ This week's notes / updates: $ARGUMENTS
 Work inline in this conversation — do not delegate to a subagent, which cannot see what
 was pasted here or ask the user questions.
 
-1. **Read first** — this week's files in `docs/meetings/` (by the date in the filename) and
-   `docs/risk-register.md`, if present. If nothing is pasted, scan those minutes alone. If
+1. **Read first** — this week's files in `docs/meetings/` (by the date in the filename),
+   `docs/risk-register.md`, `docs/decision-log.md`, and `docs/issue-log.md`, if present. If nothing is pasted, scan those minutes alone. If
    there is neither pasted material nor minutes, ask for the notes.
-2. **Report three lists**, each item with a suggested fix:
+2. **Report four lists**, each item with a suggested fix:
    - **Actions without an owner or due date.**
-   - **Undocumented decisions** — decisions mentioned in the notes that are not in any of
-     this week's minutes. Minutes are the decision record; there is no separate log.
+   - **Undocumented decisions** — decisions in the notes or this week's minutes that are
+     not in `docs/decision-log.md`.
+   - **Issues not logged** — things that have already gone wrong and are not in
+     `docs/issue-log.md`.
    - **Risks raised but not in the register** — compared against `docs/risk-register.md`.
-3. **Close** with an "Add to risk register?" block listing proposed rows. Update the
-   register only after the user approves.
+3. **Close** with a "Log these?" block of proposed rows for the risk register, decision
+   log, and issue log. Update a file only after the user approves.
 
 Be faithful to the notes; do not invent actions, decisions, or risks.

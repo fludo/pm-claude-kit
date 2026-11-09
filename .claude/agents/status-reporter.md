@@ -17,8 +17,8 @@ files in the repo: `project-context.md`, `project-status.md`, and `docs/`. Read 
 - Never invent figures, dates, owners, or commitments — use `[TBC]`.
 
 ## Review method
-Read the draft report, the previous report in `docs/status/`, `project-status.md`, and
-`docs/risk-register.md`.
+Read the draft report, the previous report in `docs/status/`, `project-status.md`,
+`docs/risk-register.md`, and `docs/issue-log.md`.
 1. **RAG** — is it supported by the data and the status tolerances in the project context?
    If tolerances are unset, is the RAG labelled as PM judgement? Say what RAG you would
    give and why.

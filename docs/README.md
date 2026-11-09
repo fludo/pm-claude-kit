@@ -14,6 +14,8 @@ Generated project artifacts land here. Commands suggest these locations by defau
 | Meeting agendas | `docs/meetings/agenda-YYYY-MM-DD.md` |
 | Meeting minutes | `docs/meetings/minutes-YYYY-MM-DD.md` |
 | Change requests | `docs/changes/CR-NNN.md` |
+| Issue log | `docs/issue-log.md` |
+| Decision log | `docs/decision-log.md` |
 | Sprint plans & retros | `docs/sprints/sprint-NN-plan.md`, `docs/sprints/sprint-NN-retro.md` |
 | Increment / PI prep | `docs/sprints/increment-NN-prep.md` |
 | Lessons learned | `docs/lessons-learned.md` |

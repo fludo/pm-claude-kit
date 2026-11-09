@@ -19,7 +19,8 @@ Follow the four-step PMI cycle:
 
 Use the template at `.claude/skills/pmi-project-management/templates/risk-register.md`.
 When a register already exists, update it in place: keep IDs, change status rather than
-deleting rows. After the first pass, actively hunt
+deleting rows. A risk that has occurred becomes *Realised* and moves to the issue log
+(`docs/issue-log.md`). After the first pass, actively hunt
 for risks commonly missed for the project's sector/technology and list them as "Candidate
 risks to confirm". Never present estimated probabilities as if measured. Draft inline; for
 a fresh-eyes challenge of a saved register, use the `risk-manager` agent and pass it the

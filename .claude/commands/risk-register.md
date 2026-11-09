@@ -21,4 +21,7 @@ was pasted here or ask the user questions.
 4. **Save** — offer `docs/risk-register.md`. If the file already exists, summarise the rows
    added, changed, and closed before writing.
 
+If a risk has already occurred, set its status to *Realised* and propose a row for
+`docs/issue-log.md` (see `/issue-log`) rather than leaving it open as a risk.
+
 For a fresh-eyes challenge of a saved register, suggest the `risk-manager` agent.

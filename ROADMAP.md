@@ -42,10 +42,6 @@ prep (skill `agile-delivery`). Still planned:*
 ## Governance & reporting
 - **Stage-gate / phase-gate review** — readiness checklist and go/no-go recommendation.
   *Knowledge Area: Integration · command `/gate-review`.*
-- **Issue log** — distinct from the risk register; open issues tracking.
-  *command `/issue-log` + template.*
-- **Decision log** — ADR-style record of project decisions.
-  *command `/decision-log`.*
 - **Benefits realisation plan** — expand the closure template into a standalone artifact.
 
 ## Integrations (noted, not built)
