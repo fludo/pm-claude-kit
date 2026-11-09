@@ -8,15 +8,13 @@ PMI Process Group: **Closing** · Knowledge Area: **Integration**.
 
 Input: $ARGUMENTS
 
-Structure:
-1. **Summary** — objectives vs. outcomes achieved.
-2. **Deliverables** — accepted / outstanding, with acceptance status.
-3. **Performance against baseline** — scope, schedule, cost, quality (from data only).
-4. **Outstanding items** — open issues, risks transferred to operations/BAU.
-5. **Benefits realisation** — expected vs. realised (or handover plan if later).
-6. **Lessons learned** — link to the lessons-learned report.
-7. **Administrative closure** — contracts closed, resources released, records archived.
-8. **Sign-off** — sponsor/client acceptance block.
+Work inline in this conversation — do not delegate to a subagent, which cannot see what
+was pasted here or ask the user questions.
 
-Mark unverified results `[TBC]`; do not claim objectives met without evidence. Offer to
-save to `docs/closure.md`.
+1. **Read first** — `docs/charter.md` (objectives and baseline), the newest report in
+   `docs/status/`, `docs/risk-register.md` (open risks to hand over), `docs/changes/`
+   (approved changes to the baseline), and `docs/lessons-learned.md`, where present.
+2. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/closure.md`. Performance against baseline comes
+   from data only. Mark unverified results `[TBC]`; do not claim an objective was met
+   without evidence. Link to the lessons-learned report rather than repeating it.
+3. **Save** — offer `docs/closure.md`.

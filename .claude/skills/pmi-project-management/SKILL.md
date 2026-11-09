@@ -1,6 +1,6 @@
 ---
 name: pmi-project-management
-description: PMI-aligned project management methodology for running the full project life cycle with Claude. Use whenever the task involves project planning, governance, or PM artifacts — a charter/PID, scope or requirements, schedule, budget, RACI, risk register, stakeholder or communications plan, status report, change request, meeting agenda/minutes, lessons learned, or project closure. Organises work by PMI's five Process Groups and ten Knowledge Areas and enforces draft-for-review discipline.
+description: Life-cycle frame and shared templates for the PM kit. Use when the task spans several PM artifacts, asks where something fits in the PMI Process Groups or Knowledge Areas, asks which artifact or command to use next, or needs an artifact with no dedicated skill (charter/PID, RACI, requirements, communications plan, meeting agenda/minutes, lessons learned, closure). Risk, stakeholder, status, change-control, and agile work have their own skills — prefer those.
 ---
 
 # PMI Project Management
@@ -10,10 +10,9 @@ Claude is **not** a system of record: it never reads live Jira/budgets/Project f
 never invents figures or dates.
 
 ## 1. Always establish context first
-Before producing an artifact, confirm the **project context block** (role, org/sector,
-methodology, governance, constraints, stakeholders, current phase). Read a
-`project-context.md` at the repo root if it exists; otherwise ask once, then proceed with
-clearly labelled assumptions. State the **audience and output format** for every
+The project context block from `project-context.md` is loaded with `CLAUDE.md`. Fields
+that are blank or still `<...>` are unknown: ask once for what the task needs, then proceed
+with clearly labelled assumptions. State the **audience and output format** for every
 deliverable.
 
 ## 2. Map every task to the life cycle
@@ -30,31 +29,42 @@ Name the **Process Group** and **Knowledge Area** each artifact serves.
 **Knowledge Areas:** Integration · Scope · Schedule · Cost · Quality · Resource ·
 Communications · Risk · Procurement · Stakeholder.
 
-## 3. Templates
-Reusable starting points live in `templates/`:
-- `charter.md` — project charter / PID
-- `risk-register.md` — risk register
-- `status-report.md` — period status report
-- `raci.md` — responsibility assignment matrix
-- `change-request.md` — change request
-- `requirements.md` — requirements register + review findings
-- `comms-plan.md` — communications management plan
-- `sprint-plan.md` — iteration / sprint plan (agile)
-- `retro.md` — iteration retrospective (agile)
-- `stakeholder-register.md` — stakeholder analysis + engagement
-- `lessons-learned.md` — lessons learned
-- `closure.md` — project closure summary
+## 3. Templates — the single source for structure
+Each artifact's structure lives in `templates/` (from the repo root:
+`.claude/skills/pmi-project-management/templates/`). Read the matching template and tailor it
+to the project context; do not restate its structure elsewhere.
 
-Load the matching template, then tailor it to the project context.
+| Template | Artifact | Command |
+|---|---|---|
+| `charter.md` | Charter / PID | `/charter` |
+| `stakeholder-register.md` | Stakeholder analysis + engagement | `/stakeholder-analysis` |
+| `risk-register.md` | Risk register, scoring scale, severity bands | `/risk-register` |
+| `raci.md` | Responsibility assignment matrix | `/raci` |
+| `requirements.md` | Requirements register + review findings | `/requirements-review` |
+| `comms-plan.md` | Communications management plan | `/comms-plan` |
+| `agenda.md` | Meeting agenda | `/agenda` |
+| `minutes.md` | Meeting minutes | `/minutes` |
+| `project-status.md` | Current status data the PM maintains (copied to the repo root) | `/import-project` |
+| `status-report.md` | Period status report, default RAG definitions | `/status-report`, `/weekly-monday` |
+| `change-request.md` | Change request | `/change-request` |
+| `sprint-plan.md` | Iteration / sprint plan (agile) | `/sprint-planning` |
+| `retro.md` | Iteration retrospective (agile) | `/retro` |
+| `lessons-learned.md` | Lessons learned | `/lessons-learned` |
+| `closure.md` | Project closure summary | `/closure` |
 
-## 4. Specialist agents
-For multi-step reasoning, delegate to the right subagent: `risk-manager`,
-`stakeholder-analyst`, `status-reporter`, `requirements-analyst`, `meeting-scribe`, and
-`pm-thinking-partner` (to stress-test a recommendation before it goes out).
+## 4. Draft inline; use agents for a second pass
+Draft artifacts **in the main conversation**, where the pasted data is and where the user
+can answer questions. The specialist agents (`risk-manager`, `stakeholder-analyst`,
+`status-reporter`, `requirements-analyst`, `meeting-scribe`, `pm-thinking-partner`) start
+without the conversation, cannot ask questions, and do not write files. Use them for an
+independent review of a **saved** artifact, and pass the file path plus anything else they
+need in the brief.
 
 ## 5. Discipline (non-negotiable)
 - Mark unknown metrics, costs, and dates `[TBC]`; never fabricate.
 - Separate **facts** (from supplied data) from **PM judgement** (labelled).
 - Flag stakeholder-sensitive and political decisions for the human PM.
-- Remind the user to check data-governance policy before handling confidential/client data.
+- Follow the data governance note in the project context; if it is unfilled, remind the
+  user once per session to check policy before handling confidential/client data.
+- Read the existing file in `docs/` before writing; update in place and show what changes.
 - End artifacts with an "Open questions / data I still need" section.

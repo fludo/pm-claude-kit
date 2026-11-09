@@ -33,11 +33,11 @@ additions. Each notes the PMI Knowledge Area and the proposed form (command / ag
   *Knowledge Area: Procurement · skill `procurement` + command `/procurement`.*
 
 ## Agile / hybrid
-- **Agile ceremonies pack** — sprint planning, backlog refinement, retrospective, sprint
-  review narratives; velocity/burndown interpretation from pasted data.
-  *Cross-cutting · skill `agile-delivery`.*
-- **Product/sprint backlog grooming** — story quality, INVEST checks (extends
-  `requirements-analyst`).
+*Shipped: sprint planning, backlog refinement, retrospective, and increment/PI planning
+prep (skill `agile-delivery`). Still planned:*
+- **Sprint review narratives** and **velocity/burndown interpretation** from pasted data.
+  *Cross-cutting · extends skill `agile-delivery`.*
+- **INVEST checks** for story quality (extends `/backlog-refinement`).
 
 ## Governance & reporting
 - **Stage-gate / phase-gate review** — readiness checklist and go/no-go recommendation.
@@ -54,7 +54,8 @@ additions. Each notes the PMI Knowledge Area and the proposed form (command / ag
   would format output for copy-in, not call live APIs.
 
 ---
-*When adding an item: follow the existing pattern — a slash command in `.claude/commands/`,
-a specialist in `.claude/agents/`, and/or a methodology skill in `.claude/skills/` with a
-template under `pmi-project-management/templates/`. Keep the draft-for-review, no-fabricated-
+*When adding an item: follow the existing layering — structure in a template under
+`pmi-project-management/templates/`, method in a skill in `.claude/skills/`, a slash
+command in `.claude/commands/` that drafts inline and reads existing files first, and an
+agent in `.claude/agents/` only where an independent review adds value. Keep the draft-for-review, no-fabricated-
 numbers discipline.*

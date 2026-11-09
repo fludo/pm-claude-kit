@@ -4,17 +4,20 @@ argument-hint: [the issue and desired outcome]
 ---
 
 Draft an **escalation email** to a sponsor / senior stakeholder.
-PMI Knowledge Area: **Communications / Stakeholder** · Process Group: **Executing**.
+PMI Process Group: **Executing** · Knowledge Areas: **Communications + Stakeholder**.
 
 Issue: $ARGUMENTS
 
-Use the **stakeholder-analyst** approach. The email must:
-1. **Acknowledge** the issue plainly and early.
-2. **Take ownership** — no blame-shifting.
-3. **State impact** — on scope, schedule, cost, or quality (facts only; `[TBC]` for gaps).
-4. **Present options** — 2–3, with trade-offs and a clear **recommendation**.
-5. **Make the ask** — the specific decision or support needed, and by when.
-6. **Maintain confidence** — measured, solution-oriented tone.
+Work inline in this conversation — do not delegate to a subagent, which cannot see what
+was pasted here or ask the user questions. If the issue, the recipient, or the decision needed is unclear, ask once.
 
-Keep it short and decision-ready. Offer 2 subject-line options and, if useful, a softer
-and a firmer version of the opening. Flag anything politically sensitive for the PM.
+1. **Read first** — `docs/stakeholders.md` for the recipient's interests, concerns, and key
+   message, and the newest report in `docs/status/` for facts, where present.
+2. **Draft** following the escalation sequence in the `stakeholder-management` skill. State
+   impact from facts only (`[TBC]` for gaps). Give 2–3 options with trade-offs and a clear
+   recommendation, and the specific ask with a date. Keep it short and decision-ready.
+3. **Offer** 2 subject lines and, if useful, a softer and a firmer opening.
+4. **Flag** anything politically sensitive for the PM. Do not save unless asked.
+
+Before sending something high-stakes, suggest the `stakeholder-analyst` agent to read the
+saved draft as the recipient would.

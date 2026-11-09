@@ -11,5 +11,7 @@
 - **Key constraints:** <budget / deadline / fixed scope / regulatory>
 - **Primary stakeholders / audience:** <sponsor, client, team, vendors>
 - **Current phase:** <Initiating | Planning | Executing | Monitoring & Controlling | Closing>
+- **Status tolerances (RAG thresholds):** <e.g. Amber if a milestone forecast slips more than N days or cost forecast exceeds budget by N%; Red beyond M — or "kit defaults">
+- **Risk scoring:** <"kit default" (1–5 × 1–5, bands in the risk template) or your organisation's scale and severity bands>
 - **Terminology / house style:** <any org-specific terms, templates, or tone>
 - **Data governance note:** <what data may / may not be pasted into Claude>

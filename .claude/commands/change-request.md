@@ -8,15 +8,16 @@ PMI Process Group: **Monitoring & Controlling** · Knowledge Area: **Integration
 
 Proposed change: $ARGUMENTS
 
-Produce:
-1. **CR ID / title / date / requester.**
-2. **Description of change** — what is changing and why.
-3. **Reason / driver** — problem, opportunity, or external trigger.
-4. **Impact assessment** — on scope, schedule, cost, quality, risk, and resources.
-   State unknowns as `[TBC]`; do not invent figures.
-5. **Options considered** — including "reject / do nothing", with a recommendation.
-6. **Affected stakeholders & approvals needed.**
-7. **Decision** — Approve / Reject / Defer (CCB sign-off block).
+Work inline in this conversation — do not delegate to a subagent, which cannot see what
+was pasted here or ask the user questions.
 
-End with "Information needed to assess impact" for any gaps. Offer to save to
-`docs/changes/CR-NNN.md`.
+1. **Read first** — list `docs/changes/` and take the next free `CR-NNN`. Read
+   `docs/charter.md` (the scope and baseline the change is measured against) and
+   `docs/risk-register.md`, if present.
+2. **Draft** following the `change-control` skill and the structure in
+   `.claude/skills/pmi-project-management/templates/change-request.md`. Assess impact on scope, schedule, cost, quality, risk, and
+   resources; unknowns are `[TBC]`, never invented. Options always include
+   "reject / do nothing", with a recommendation. Leave the decision block for the CCB.
+3. **Close** with "Information needed to assess impact" and note any risk-register or
+   schedule updates that approval would trigger.
+4. **Save** — offer `docs/changes/CR-NNN.md`.

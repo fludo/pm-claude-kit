@@ -8,17 +8,15 @@ Agile ceremony · PMI Process Group: **Planning** · Knowledge Areas: **Scope + 
 
 Input: $ARGUMENTS
 
-If capacity, the candidate backlog, or the goal aren't given, ask once — do not invent
-velocity, estimates, or capacity. Produce:
+Work inline in this conversation — do not delegate to a subagent, which cannot see what
+was pasted here or ask the user questions. If capacity, the candidate backlog, or the goal are not given, ask once — do not
+invent velocity, estimates, or capacity.
 
-1. **Iteration goal** — one sentence the team can rally behind.
-2. **Capacity** — available capacity this iteration (from data provided; `[TBC]` if not).
-3. **Proposed selection** — table: item | estimate | priority | acceptance criterion |
-   fits capacity? Mark the selection as **proposed, not committed** — the team commits.
-4. **Definition of done** — the bar each item must meet (carry forward if one exists).
-5. **Risks / dependencies** — anything that could block the goal; flag items that should
-   go to the risk register.
-6. **Not selected** — items considered but left out, with the reason.
-
-End with "Open questions before the team commits". Offer to save to
-`docs/sprints/sprint-NN-plan.md`.
+1. **Read first** — list `docs/sprints/` and take the next free `sprint-NN`. Read the
+   previous plan (carry forward the definition of done and unfinished items) and the
+   previous retro (open actions), where present.
+2. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/sprint-plan.md`. The selection is **proposed, not
+   committed** — the team commits. Give a reason for each item not selected. Flag risks
+   and dependencies that belong in the risk register.
+3. **Close** with "Open questions before the team commits".
+4. **Save** — offer `docs/sprints/sprint-NN-plan.md`.

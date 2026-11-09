@@ -3,20 +3,18 @@ description: Draft a communications management plan
 argument-hint: [stakeholders / cadence notes, or a brief]
 ---
 
-Draft a **communications management plan**.
+Draft or update the **communications management plan**.
 PMI Process Group: **Planning** · Knowledge Area: **Communications**.
 
 Input: $ARGUMENTS
 
-Produce a table:
-| Audience / stakeholder | Information need | Format / channel | Frequency | Owner | Purpose |
+Work inline in this conversation — do not delegate to a subagent, which cannot see what
+was pasted here or ask the user questions.
 
-Cover at least: sponsor/steering, client, project team, vendors/suppliers, and wider
-organisation. Add:
-- **Escalation path** — who, when, and how issues are escalated.
-- **Meeting cadence** — standing meetings and their purpose.
-- **Reporting cadence** — status reports and dashboards.
-
-Tie each line to a stakeholder need (run `/stakeholder-analysis` first if none exists).
-Use the template at `.claude/skills/pmi-project-management/templates/comms-plan.md`.
-Offer to save to `docs/comms-plan.md`.
+1. **Read first** — `docs/stakeholders.md` (every line of the plan ties to a stakeholder
+   need; if it does not exist, suggest `/stakeholder-analysis` first) and
+   `docs/comms-plan.md` if it exists (update in place).
+2. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/comms-plan.md`. Cover at least sponsor/steering,
+   client, project team, vendors/suppliers, and the wider organisation. Take the reporting
+   cadence from the *Governance* field of the project context; do not invent one.
+3. **Save** — offer `docs/comms-plan.md`.

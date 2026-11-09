@@ -8,14 +8,18 @@ PMI Process Group: **Planning** · Knowledge Area: **Scope**.
 
 Requirements: $ARGUMENTS
 
-Use the **requirements-analyst** agent. Produce:
-- A table: ID | original requirement | issue(s) | severity | proposed revised wording.
-- **Scope gaps**, **conflicts/duplicates**, and **open questions for stakeholders**.
+Work inline in this conversation — do not delegate to a subagent, which cannot see what
+was pasted here or ask the user questions. If nothing is pasted, use `docs/requirements.md`; if that does not exist, ask for
+the requirements or a file path.
 
-Rewrite unmeasurable requirements into testable form. Do not expand scope silently — label
-anything new as a candidate to confirm. If nothing is pasted, ask for the requirements or a
-file path.
+1. **Read first** — `docs/requirements.md` if it exists (keep existing IDs) and the
+   objectives and scope in `docs/charter.md`, to check traceability and scope gaps.
+2. **Review** each requirement: clear (one interpretation), testable, atomic, feasible and
+   consistent, traceable. Rewrite unmeasurable ones into testable form. Do not expand scope
+   silently — label anything new "candidate requirement to confirm".
+3. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/requirements.md`: register, review findings,
+   scope gaps, conflicts/duplicates, open questions for stakeholders.
+4. **Save** — offer `docs/requirements.md`.
 
-Use the template at `.claude/skills/pmi-project-management/templates/requirements.md`.
-Offer to save the reviewed requirements (with revised wording and findings) to
-`docs/requirements.md`.
+For a large or contested set, suggest the `requirements-analyst` agent for an independent
+second review of the saved file.

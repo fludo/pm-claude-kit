@@ -23,7 +23,7 @@ terms. Treat these as **synonyms**, not different concepts:
 1. **Iteration/sprint planning** — a goal, capacity, and a *proposed* (not committed)
    selection of backlog items against a definition of done. → `/sprint-planning`
 2. **Backlog refinement** — check items are *ready*: clear, estimated, small enough,
-   with acceptance criteria. Reuse the `requirements-analyst` agent for wording quality.
+   with acceptance criteria.
    → `/backlog-refinement`
 3. **Retrospective** — a fast, action-oriented inspect-and-adapt for one iteration.
    Lighter and more frequent than `/lessons-learned` (which is project/phase-level, by
@@ -32,9 +32,12 @@ terms. Treat these as **synonyms**, not different concepts:
    capacity for the next several iterations. → `/pi-planning-prep`
 
 ## Reuse, don't duplicate
-- Meeting facilitation / notes → `meeting-scribe` agent.
-- Requirement/story wording quality → `requirements-analyst` agent.
-- Risks surfaced in planning → `/risk-register` and the `risk-manager` agent.
+- Ceremony notes → `/minutes`.
+- Risks surfaced in planning → `/risk-register`.
+- Independent second review of a saved backlog or requirements file →
+  `requirements-analyst` agent (pass it the file path).
+- Number files by listing `docs/sprints/` and taking the next free `NN`; read the previous
+  plan and retro first so the definition of done and open actions carry forward.
 
 For PMI mapping these mostly serve **Scope** and **Schedule** in Planning, and
 **Integration** in Monitoring & Controlling — but lead with the team's agile language.

@@ -13,15 +13,18 @@ paste-the-data-in, and human judgement on the political calls.
 ## Quick start
 1. Fill in **`project-context.md`** at the repo root (Claude reads it automatically).
 2. Use a slash command, e.g. `/charter`, `/risk-register`, `/status-report`.
-3. For multi-step work, Claude delegates to the matching specialist agent.
+3. Optionally copy the `project-status.md` template to the repo root and keep your current
+   progress, milestones, and budget there — `/status-report` and `/weekly-monday` read it.
+4. For an independent second look at a saved artifact, ask for a specialist agent (e.g.
+   "have the risk-manager review the register"). Agents review; commands draft.
 
 ## What's inside
 
 ```
 .claude/
 ├── CLAUDE.md                 # Project context block + working principles (auto-loaded)
-├── settings.json             # Permissions
-├── agents/                   # Specialist subagents
+├── settings.json             # Permissions (edits limited to docs/ and the two project files)
+├── agents/                   # Read-only reviewers for a second pass on saved artifacts
 │   ├── risk-manager.md
 │   ├── stakeholder-analyst.md
 │   ├── status-reporter.md
@@ -51,7 +54,7 @@ paste-the-data-in, and human judgement on the political calls.
 │   ├── retro.md              /retro            → Iteration retrospective (agile)
 │   └── pi-planning-prep.md   /pi-planning-prep → Increment / PI planning prep (agile)
 └── skills/                   # Methodology packs (auto-trigger on matching tasks)
-    ├── pmi-project-management/  # Master skill + templates/ (12 reusable templates)
+    ├── pmi-project-management/  # Life-cycle frame + templates/ (15 templates, the single source for structure)
     ├── risk-management/
     ├── stakeholder-management/
     ├── status-reporting/
@@ -91,11 +94,18 @@ Prefer to do it by hand? The manual equivalent:
 - Never fabricates numbers or dates — unknowns are marked `[TBC]`.
 - Separates facts from PM judgement, and flags political/stakeholder calls for you.
 - Every artifact is a **draft for human review** before it reaches a sponsor or client.
-- Reminds you to check data-governance policy before handling confidential data.
+- Follows the data-governance note in `project-context.md`; reminds you to check policy if it's empty.
+- Reads the existing file before updating an artifact, and shows what changes before replacing it.
+- Derives RAG and risk severity from the tolerances and scale in `project-context.md` (kit
+  defaults otherwise, labelled as PM judgement).
 
 Generated artifacts are suggested into `docs/` (e.g. `docs/charter.md`,
 `docs/risk-register.md`, `docs/status/`, `docs/meetings/`, `docs/changes/`,
 `docs/sprints/`).
+
+> **Using this for a real project?** `docs/` and `project-status.md` are not git-ignored.
+> Work in a private copy, or add them to `.gitignore`, before committing real project data
+> to a repo with a public remote.
 
 ## Roadmap
 A methodology-agnostic agile delivery set (iteration planning, backlog refinement,
