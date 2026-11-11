@@ -35,8 +35,8 @@ organisational · stakeholder.
 - …
 
 <!-- Ready to send? Tick every item before this goes to a sponsor or client. Each item
-passes or fails on this document alone. This comment is guidance, not content: leave it
-out of the draft.
+passes or fails on this document alone; a `[TBC]` never fails an item on its own. This
+comment is guidance, not content: leave it out of the draft.
 - [ ] Every risk is phrased cause → event → effect.
 - [ ] Every open risk has a probability, impact, severity, response strategy, response action, and owner — each a value, `[TBC]`, or `[owner TBC]`.
 - [ ] Every severity equals probability × impact on the scale stated in this document, and one scale is used throughout.

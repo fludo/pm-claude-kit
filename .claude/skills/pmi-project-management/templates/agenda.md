@@ -31,8 +31,8 @@
 - …
 
 <!-- Ready to send? Tick every item before this goes to a sponsor or client. Each item
-passes or fails on this document alone. This comment is guidance, not content: leave it
-out of the draft.
+passes or fails on this document alone; a `[TBC]` never fails an item on its own. This
+comment is guidance, not content: leave it out of the draft.
 - [ ] The header gives a title, a date and time, a chair, attendees, and an objective — each a value or `[TBC]`.
 - [ ] Every agenda item has a purpose (inform / discuss / decide), an owner or `[owner TBC]`, and a time in minutes.
 - [ ] Every entry under *Decisions that must be made* matches an agenda item marked decide.

@@ -53,9 +53,9 @@ better than Amber. -->
 **Data I still need:** …
 
 <!-- Ready to send? Tick every item before this goes to a sponsor or client. Each item
-passes or fails on this document alone. This comment is guidance, not content: leave it
-out of the draft.
-- [ ] The header gives the period, author, date, an overall RAG, and a trend; no `<...>` prompt or `…` placeholder is left anywhere.
+passes or fails on this document alone; a `[TBC]` never fails an item on its own. This
+comment is guidance, not content: leave it out of the draft.
+- [ ] The header gives the period, author, date, an overall RAG, and a trend — each a value or `[TBC]`; no `<...>` prompt or `…` placeholder is left anywhere.
 - [ ] The RAG rationale names the threshold that set the colour, or says "PM judgement — tolerances [TBC]".
 - [ ] Cost and schedule each show figures or `[TBC]`; if either is `[TBC]`, the RAG is not Green.
 - [ ] The executive summary says whether the project is on track and names the one thing needing attention.

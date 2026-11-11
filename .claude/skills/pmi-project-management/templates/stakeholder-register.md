@@ -24,8 +24,8 @@ Engagement levels: Unaware · Resistant · Neutral · Supportive · Leading.
 - …
 
 <!-- Ready to send? Tick every item before this goes to a sponsor or client. Each item
-passes or fails on this document alone. This comment is guidance, not content: leave it
-out of the draft.
+passes or fails on this document alone; a `[TBC]` never fails an item on its own. This
+comment is guidance, not content: leave it out of the draft.
 - [ ] Every stakeholder has an influence rating, a current and a desired engagement level from the list, and a key message — each a value or `[TBC]`.
 - [ ] Every stakeholder in the register appears in exactly one quadrant of the grid.
 - [ ] Every stakeholder whose current engagement differs from the desired level has a row under *Engagement actions*.

@@ -27,8 +27,8 @@ feasible, and traceable to an objective or stakeholder need.
 - …
 
 <!-- Ready to send? Tick every item before this goes to a sponsor or client. Each item
-passes or fails on this document alone. This comment is guidance, not content: leave it
-out of the draft.
+passes or fails on this document alone; a `[TBC]` never fails an item on its own. This
+comment is guidance, not content: leave it out of the draft.
 - [ ] Every requirement has a unique ID, a type, a source, a priority, and a status — the source and priority may be `[TBC]`.
 - [ ] Every requirement has an acceptance criterion, or `[TBC]`.
 - [ ] Every review finding gives proposed revised wording, or says why none is proposed.

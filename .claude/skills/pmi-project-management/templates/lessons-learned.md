@@ -37,8 +37,8 @@
 - …
 
 <!-- Ready to send? Tick every item before this goes to a sponsor or client. Each item
-passes or fails on this document alone. This comment is guidance, not content: leave it
-out of the draft.
+passes or fails on this document alone; a `[TBC]` never fails an item on its own. This
+comment is guidance, not content: leave it out of the draft.
 - [ ] The header gives the project or phase, the period, and the participants.
 - [ ] Every item under *What went poorly* has a root cause, or `[TBC]`.
 - [ ] Every knowledge-area row holds a lesson or says "None noted"; no cell is blank.

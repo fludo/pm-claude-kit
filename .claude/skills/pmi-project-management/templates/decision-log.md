@@ -21,8 +21,8 @@ status becomes "Superseded by Dn".
 - …
 
 <!-- Ready to send? Tick every item before this goes to a sponsor or client. Each item
-passes or fails on this document alone. This comment is guidance, not content: leave it
-out of the draft.
+passes or fails on this document alone; a `[TBC]` never fails an item on its own. This
+comment is guidance, not content: leave it out of the draft.
 - [ ] Every decision row names who decided — a person or body — and a source.
 - [ ] Decision IDs are unique.
 - [ ] Every status is "Active" or "Superseded by Dn", where Dn is a row in this log.

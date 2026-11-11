@@ -29,8 +29,8 @@
 - …
 
 <!-- Ready to use? Tick every item before /status-report drafts from this file. Each item
-passes or fails on this document alone. This comment is guidance, not content: leave it
-out of the draft.
+passes or fails on this document alone; a `[TBC]` never fails an item on its own. This
+comment is guidance, not content: leave it out of the draft.
 - [ ] *As of* is a real date and the period covered is filled.
 - [ ] Every milestone has a baseline date and a forecast date — each a date or `[TBC]` — and a status.
 - [ ] Planned, actual to date, and forecast at completion are each a figure with its currency, or `[TBC]`.
