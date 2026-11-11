@@ -25,7 +25,8 @@ severity fall back to kit defaults, and the data-governance reminder keeps firin
 "not set — artifacts follow the conversation language". Only if it is not set and the
 existing `docs/` files are written in a language other than this conversation's, mention
 once that setting it keeps new artifacts in the same language. **Ready-to-send checks** is
-likewise never a gap: report it as on (the default when unfilled) or off.
+likewise never a gap: report it as on (the default when unfilled) or off. Do not list
+either optional field among the gaps or the open questions.
 
 Report the **RAG basis** (Status tolerances) and the **risk scoring basis** (Risk scoring),
 each as one of:

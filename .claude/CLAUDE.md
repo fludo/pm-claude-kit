@@ -31,7 +31,7 @@ for every artifact. If it is not shown above, read the file before serious work.
   or sent: files in `docs/`, `project-status.md`, and drafts such as an escalation email.
   The conversation itself — questions, check results, summaries — stays in the language
   the user writes in. If the field is unfilled, write artifacts in the conversation's
-  language and do not mention the field.
+  language. It is never a field a task needs: do not ask for it or list it as missing.
 - Translate headings, labels, and prose. Keep these exactly as they are in every language:
   `[TBC]` and its variants such as `[owner TBC]`; IDs such as `R1`, `I1`, `D1`, `REQ-1`,
   `CR-NNN`, `sprint-NN`; file names and paths; dates in `YYYY-MM-DD`; names, figures, and
@@ -77,6 +77,7 @@ Each layer has one job. Do not restate one layer's content in another.
   read existing files, apply the skill and template, run the template's checklist, offer
   to save. Setting **Ready-to-send checks** to `off` in the project context skips that
   checklist report; `/project-check` and the agents still run the checklists when asked.
+  Like Artifact language, it is optional: never ask for it or list it as missing.
 - **Agents** — an **independent second pass** on a saved artifact. They start without the
   conversation, cannot ask the user questions, and do not write files. Never use one to
   draft from data that was pasted into the conversation.

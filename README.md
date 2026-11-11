@@ -60,7 +60,7 @@ commands have no prefix (`/status-report`), and `/project-init` only confirms th
 └── marketplace.json          # Lets the plugin install find it from GitHub
 .claude/
 ├── CLAUDE.md                 # Project context block + working principles (auto-loaded)
-├── settings.json             # Permissions (edits limited to docs/ and the two project files)
+├── settings.json             # Permissions (edits limited to docs/ and the two project files; reads the installed kit)
 ├── agents/                   # Read-only reviewers for a second pass on saved artifacts
 │   ├── risk-manager.md
 │   ├── stakeholder-analyst.md
