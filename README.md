@@ -32,8 +32,10 @@ On Claude Code 2.1.275 or later, the first two lines can be one:
 Start a new session afterwards. As a plugin, every command carries the `pm-kit:` prefix —
 `/pm-kit:status-report` — and the agents are `pm-kit:risk-manager` and so on.
 
-To pick up a kit update, update the plugin, start a new session, and run
-`/pm-kit:project-init` again to see what changed in `CLAUDE.md` and the permissions:
+Releases are versioned (`version` in `.claude-plugin/plugin.json`); you stay on your
+installed version until you update. To pick up a new release, update the plugin, start a
+new session, and run `/pm-kit:project-init` again to see what changed in `CLAUDE.md` and
+the permissions:
 
 ```
 /plugin update pm-kit@pm-claude-kit

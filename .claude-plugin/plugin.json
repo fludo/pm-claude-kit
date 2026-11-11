@@ -1,6 +1,7 @@
 {
   "name": "pm-kit",
   "displayName": "PM Kit",
+  "version": "1.0.0",
   "description": "PMI-aligned project management assistant: drafts charters, risk registers, status reports, minutes and more as reviewable docs, with read-only reviewer agents. Run /pm-kit:project-init in each project first.",
   "author": {
     "name": "Ludovic Favre",
