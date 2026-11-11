@@ -17,8 +17,10 @@ If `project-context.md` is already filled, read it and skip what's known. Otherw
 user — in one batched set of questions — for the context block fields:
 project name/code, PM role & authority, org/sector, methodology, governance & reporting
 cadence, key constraints, primary stakeholders, **current phase** (the real one), the
-**status tolerances** behind a Red/Amber/Green call, the **risk scoring** scale in use, and
-the **data governance note** (what may be pasted here).
+**status tolerances** behind a Red/Amber/Green call, the **risk scoring** scale in use, the
+**artifact language** (the language saved documents should be written in — skip it if that
+is the language they are writing to you in), and the **data governance note** (what may be
+pasted here).
 Also ask: *where does the live project data live?* (Jira, MS Project, spreadsheets,
 email/docs) so you know what they can paste.
 
@@ -30,8 +32,9 @@ already holds project-specific values.
 
 ## Step 2 — Ingest what exists
 Accept whatever the user pastes or points to (exports, notes, old status emails, a charter
-draft, a task list). **Organise it; never invent.** Sort the material into the kit's
-artifacts:
+draft, a task list). **Organise it; never invent.** Material in another language is
+translated into the artifact language; names, IDs, figures, and dates are copied exactly.
+Sort the material into the kit's artifacts:
 
 | Source material | Target file |
 |---|---|

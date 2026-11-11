@@ -18,10 +18,16 @@ phase. If the file is missing, that's the top finding. Call out separately if **
 tolerances**, **Risk scoring**, or the **Data governance note** are unfilled: RAG and risk
 severity fall back to kit defaults, and the data-governance reminder keeps firing.
 
+**Artifact language** is optional and never a gap: report it as the language set, or as
+"not set — artifacts follow the conversation language". Only if it is not set and the
+existing `docs/` files are written in a language other than this conversation's, mention
+once that setting it keeps new artifacts in the same language.
+
 Report the **RAG basis** (Status tolerances) and the **risk scoring basis** (Risk scoring),
 each as one of:
 - **Project-specific** — the field holds the project's own values.
-- **Kit default** — the field says "kit defaults" or "kit default", or repeats the values
+- **Kit default** — the field says "kit defaults" or "kit default" (these values stay in
+  English whatever the Artifact language), or repeats the values
   in `.claude/skills/pmi-project-management/templates/`: the RAG basis comment in
   `status-report.md`, or the scale and severity bands in `risk-register.md`.
 - **Unset** — the field is unfilled, so the kit default applies as PM judgement.
@@ -33,8 +39,9 @@ Also check `project-status.md` (repo root): present or missing, and its "As of" 
 is optional before Executing; from Executing onward a missing file is a gap.
 
 **1b. Context the docs already state**
-For every context field that is unfilled, look for the value in `docs/` (the charter header
-and its governance, constraints, and stakeholder sections are the usual places). Build a
+For every context field that is unfilled, except Artifact language, look for the value in
+`docs/` (the charter header and its governance, constraints, and stakeholder sections are
+the usual places). Build a
 table: field | proposed value | source (file and section). Propose only values the docs
 state outright — never infer one, and leave a field unproposed if the docs conflict or are
 silent. If **Current phase** is unfilled but a doc states it, use that phase for step 2 and
@@ -71,6 +78,8 @@ For the artifacts that exist, spot-check:
   register and issue log appear in the stakeholder register.
 - **Cross-doc** — stakeholders named in the charter appear in the stakeholder register;
   top charter risks appear in the risk register.
+- **Cross-doc** — if Artifact language is set, list `docs/` files written in another
+  language (⚠️). Translating one needs the PM's go-ahead.
 
 **4. Freshness**
 Flag the newest `docs/status/` report if it looks stale for the reporting cadence in the

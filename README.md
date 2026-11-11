@@ -11,7 +11,9 @@ paste-the-data-in, and human judgement on the political calls.
 > the Project Management Institute, which does not endorse this project either.
 
 ## Quick start
-1. Fill in **`project-context.md`** at the repo root (Claude reads it automatically).
+1. Fill in **`project-context.md`** at the repo root (Claude reads it automatically). To
+   write steering reports in French or German while you work in English, set
+   **Artifact language**.
 2. Use a slash command, e.g. `/charter`, `/risk-register`, `/status-report`.
 3. Optionally copy the `project-status.md` template to the repo root and keep your current
    progress, milestones, and budget there — `/status-report` and `/weekly-monday` read it.
@@ -101,6 +103,9 @@ Prefer to do it by hand? The manual equivalent:
 - Reads the existing file before updating an artifact, and shows what changes before replacing it.
 - Derives RAG and risk severity from the tolerances and scale in `project-context.md` (kit
   defaults otherwise, labelled as PM judgement).
+- Writes saved artifacts in the **Artifact language** from `project-context.md` (the
+  language you write in, if it is unset) and keeps talking to you in your own language.
+  `[TBC]`, IDs such as `CR-NNN`, file names, dates, and figures never change.
 
 Generated artifacts are suggested into `docs/` (e.g. `docs/charter.md`,
 `docs/risk-register.md`, `docs/status/`, `docs/meetings/`, `docs/changes/`,

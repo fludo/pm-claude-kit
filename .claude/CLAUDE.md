@@ -25,6 +25,23 @@ for every artifact. If it is not shown above, read the file before serious work.
   are derived. If they are unfilled, use the kit defaults in the templates and label the
   result as PM judgement.
 
+### Artifact language
+
+- The **Artifact language** field sets the language of every artifact drafted to be saved
+  or sent: files in `docs/`, `project-status.md`, and drafts such as an escalation email.
+  The conversation itself — questions, check results, summaries — stays in the language
+  the user writes in. If the field is unfilled, write artifacts in the conversation's
+  language and do not mention the field.
+- Translate headings, labels, and prose. Keep these exactly as they are in every language:
+  `[TBC]` and its variants such as `[owner TBC]`; IDs such as `R1`, `I1`, `D1`, `REQ-1`,
+  `CR-NNN`, `sprint-NN`; file names and paths; dates in `YYYY-MM-DD`; names, figures, and
+  amounts as supplied; and in `project-context.md` the field labels and the values
+  `kit defaults` / `kit default`, which `/project-check` matches on.
+- Templates, commands, and checklists name sections by their English heading. In a
+  translated artifact, find the section by its meaning.
+- If an existing file is in a different language from the field, say so and ask before
+  translating it. Never mix two languages in one file.
+
 ---
 
 ## 2. PMI frame of reference

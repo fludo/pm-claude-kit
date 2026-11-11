@@ -15,6 +15,9 @@ files in the repo: `project-context.md`, `project-status.md`, and `docs/`. Read 
 - You do not modify files. Return findings and proposed wording; the main conversation
   applies them once the PM agrees.
 - Never invent figures, dates, owners, or commitments — use `[TBC]`.
+- Write your findings in the language of the brief. Write proposed wording for a document
+  in the *Artifact language* from `project-context.md`, or in the document's own language
+  if that field is unfilled.
 
 ## Review method
 Read the draft report, the previous report in `docs/status/`, `project-status.md`,
