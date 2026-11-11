@@ -33,7 +33,8 @@ Start a new session afterwards. As a plugin, every command carries the `pm-kit:`
 `/pm-kit:status-report` — and the agents are `pm-kit:risk-manager` and so on.
 
 Releases are versioned (`version` in `.claude-plugin/plugin.json`); you stay on your
-installed version until you update. To pick up a new release, update the plugin, start a
+installed version until you update. [`CHANGELOG.md`](CHANGELOG.md) says what each release
+changes. To pick up a new release, update the plugin, start a
 new session, and run `/pm-kit:project-init` again to see what changed in `CLAUDE.md` and
 the permissions:
 
