@@ -22,5 +22,6 @@ rather than inventing them.
 3. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
    ready-to-send checklist at the end of the template against the draft. Fix what the
    material supports — never by inventing content — then report every item as ❌ or ✅
-   with a one-line reason, failures first.
+   with a one-line reason, failures first, in the language the user writes in (not the
+   Artifact language).
 4. **Save** — offer `docs/sprints/sprint-NN-retro.md`.
