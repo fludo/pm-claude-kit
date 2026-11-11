@@ -1,7 +1,9 @@
 # PM Kit for Claude Code
 
-A PMI-aligned `.claude` boilerplate that turns Claude Code into a project management
-assistant. It follows PMI's five Process Groups and ten Knowledge Areas, with a practical
+Run your project week to week in Claude Code. `/weekly-monday` drafts the status report,
+`/weekly-friday` catches the week's loose ends, and in between one command per artifact
+drafts the charter, risk register, change requests, minutes, and the rest for you to
+review. It follows PMI's five Process Groups and ten Knowledge Areas, with a practical
 working style: rich context, stated output format and audience, reasoning over lookup,
 paste-the-data-in, and human judgement on the political calls.
 
