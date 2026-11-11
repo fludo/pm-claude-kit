@@ -17,7 +17,7 @@ was pasted here or ask the user questions.
 2. **Check it is an issue** — something that has already happened and needs action now. If
    the input describes something that might happen, say so and propose a risk-register row
    instead.
-3. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/issue-log.md`. Record only what the input states:
+3. **Draft** using the structure in `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/issue-log.md`. Record only what the input states:
    a missing owner is `[owner TBC]`, a missing date `[TBC]`. Priority is PM judgement —
    propose it and label it as such.
 4. **With no input, review** — list issues that are overdue against their target date,

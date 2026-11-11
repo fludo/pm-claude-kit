@@ -16,7 +16,7 @@ inventing them.
 1. **Read first** — `docs/lessons-learned.md` if it exists (append the new phase; do not
    overwrite earlier ones), plus retros in `docs/sprints/`, `docs/changes/`, and the
    closed and occurred risks in `docs/risk-register.md` as evidence, where present.
-2. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/lessons-learned.md`. "What went poorly" names a
+2. **Draft** using the structure in `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/lessons-learned.md`. "What went poorly" names a
    root cause, not a symptom. Every recommendation has an owner or `[owner TBC]`.
 3. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
    ready-to-send checklist at the end of the template against the draft. Fix what the

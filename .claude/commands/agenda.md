@@ -13,7 +13,7 @@ was pasted here or ask the user questions. If the purpose, attendees, or topics 
 
 1. **Read first** — the most recent minutes in `docs/meetings/`, if any. Carry forward open
    actions and parked items relevant to this meeting.
-2. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/agenda.md`. Mark each item inform / discuss /
+2. **Draft** using the structure in `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/agenda.md`. Mark each item inform / discuss /
    decide. For contentious items, give the likely points of disagreement and a balanced
    framing that keeps the discussion productive.
 3. **Close** with "Assumptions / open questions".

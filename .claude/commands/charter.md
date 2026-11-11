@@ -14,7 +14,7 @@ assumptions.
 
 1. **Read first** — `docs/charter.md` if it exists (update it and bump the version rather
    than starting over) and `docs/stakeholders.md` for sponsor and governance names.
-2. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/charter.md`. Objectives are SMART, each with a
+2. **Draft** using the structure in `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/charter.md`. Objectives are SMART, each with a
    success measure. Scope lists explicit exclusions. Limit high-level risks to the top 5.
    Budget and dates come only from supplied data; otherwise `[TBC]`.
 3. **Close** with "Open questions before approval".

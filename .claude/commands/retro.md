@@ -15,7 +15,7 @@ rather than inventing them.
 
 1. **Read first** — list `docs/sprints/` to find the iteration number and read the previous
    retro, if any. Its open actions go in "Carry-over".
-2. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/retro.md`. "What didn't" names a root cause, not a
+2. **Draft** using the structure in `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/retro.md`. "What didn't" names a root cause, not a
    symptom. Every action has an owner or `[owner TBC]`. Keep actions to the few that will
    actually get done. Be faithful to the notes; do not invent what the team said.
 3. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the

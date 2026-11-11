@@ -44,6 +44,16 @@ prep (skill `agile-delivery`). Still planned:*
   *Knowledge Area: Integration · command `/gate-review`.*
 - **Benefits realisation plan** — expand the closure template into a standalone artifact.
 
+## Packaging
+*Shipped: install as a Claude Code plugin (`pm-kit` from the `pm-claude-kit` marketplace),
+with `/project-init` to set up a project folder. Still planned:*
+- **Commands as skills** — Claude Code now treats `commands/` as the older format and
+  prefers skills, which can also carry their own files. Moving each command to
+  `.claude/skills/<name>/SKILL.md` (with `disable-model-invocation: true`) would keep the
+  same names in both install routes.
+- **Release versions** — `plugin.json` sets no `version`, so every commit on `main` is a
+  release. Pin a version once the kit needs release notes.
+
 ## Integrations (noted, not built)
 - Export helpers to push artifacts into Jira / Monday.com / Asana / MS Project formats
   (CSV / structured output), pending the user's tooling. Claude stays standalone — these
@@ -53,5 +63,7 @@ prep (skill `agile-delivery`). Still planned:*
 *When adding an item: follow the existing layering — structure and a ready-to-send
 checklist in a template under `pmi-project-management/templates/`, method in a skill in `.claude/skills/`, a slash
 command in `.claude/commands/` that drafts inline and reads existing files first, and an
-agent in `.claude/agents/` only where an independent review adds value. Keep the draft-for-review, no-fabricated-
+agent in `.claude/agents/` only where an independent review adds value. Refer to kit files
+as `${CLAUDE_PLUGIN_ROOT}/.claude/...` so they resolve in both install routes, and list a
+new agent in `.claude-plugin/plugin.json`, which names agents one by one. Keep the draft-for-review, no-fabricated-
 numbers discipline.*

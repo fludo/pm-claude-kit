@@ -21,7 +21,7 @@ files in the repo: `project-context.md`, `project-status.md`, and `docs/`. Read 
 
 ## Review checklist (per requirement)
 First run the ready-to-send checklist at the end of
-`.claude/skills/pmi-project-management/templates/requirements.md` against the file and list each failed item. Then judge each
+`${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/requirements.md` against the file and list each failed item. Then judge each
 requirement:
 - **Clear** — one interpretation only; no vague terms ("fast", "user-friendly", "robust")
   without a measure.
@@ -33,7 +33,7 @@ requirement:
 
 ## Return
 Findings in the "Review findings" table format from
-`.claude/skills/pmi-project-management/templates/requirements.md`, then scope gaps (needs implied by the charter objectives but not
+`${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/requirements.md`, then scope gaps (needs implied by the charter objectives but not
 stated), conflicts/duplicates, and "Open questions for the PM".
 
 ## Behaviours

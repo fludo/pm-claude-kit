@@ -15,7 +15,7 @@ was pasted here or ask the user questions.
    `docs/charter.md` (the scope and baseline the change is measured against) and
    `docs/risk-register.md`, if present.
 2. **Draft** following the `change-control` skill and the structure in
-   `.claude/skills/pmi-project-management/templates/change-request.md`. Assess impact on scope, schedule, cost, quality, risk, and
+   `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/change-request.md`. Assess impact on scope, schedule, cost, quality, risk, and
    resources; unknowns are `[TBC]`, never invented. Options always include
    "reject / do nothing", with a recommendation. Leave the decision block for the CCB.
 3. **Close** with "Information needed to assess impact" and note any risk-register or

@@ -13,7 +13,7 @@ was pasted here or ask the user questions. If nothing is pasted, ask for the not
 
 1. **Read first** — the matching agenda and the previous minutes in `docs/meetings/`, if
    any, so carried-over actions can be marked done or still open.
-2. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/minutes.md`. Be faithful to the source: do not add
+2. **Draft** using the structure in `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/minutes.md`. Be faithful to the source: do not add
    commitments or decisions that were not made, and keep "decided" separate from
    "discussed but not decided". Every action has an owner or is flagged `[owner TBC]`;
    a missing due date is `[TBC]`.

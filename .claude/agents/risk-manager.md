@@ -21,7 +21,7 @@ files in the repo: `project-context.md`, `project-status.md`, and `docs/`. Read 
 
 ## Review method
 Use the scoring scale in the project context, or the default in
-`.claude/skills/pmi-project-management/templates/risk-register.md`. Start by running the ready-to-send checklist at the end of
+`${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/risk-register.md`. Start by running the ready-to-send checklist at the end of
 that template against the register and list each failed item; the steps below go beyond it.
 1. **Missed risks** — from the context, charter, sector, and technology, look across
    technical, schedule, cost, resource, external/market, regulatory, organisational, and

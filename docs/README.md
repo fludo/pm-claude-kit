@@ -22,7 +22,7 @@ Generated project artifacts land here. Commands suggest these locations by defau
 | Closure summary | `docs/closure.md` |
 
 Current status data you maintain yourself lives in `project-status.md` at the repo root
-(template in `.claude/skills/pmi-project-management/templates/`). Dates in filenames matter:
+(template in the kit's `.claude/skills/pmi-project-management/templates/`). Dates in filenames matter:
 `/project-check` and the status commands use them to find the newest file.
 
 These files are **not git-ignored**. Before committing real project data, make sure the

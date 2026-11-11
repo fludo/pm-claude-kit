@@ -13,9 +13,10 @@ Focus (optional): $ARGUMENTS
 
 **1. Context block**
 Read `project-context.md` (repo root). Check every field is filled, apart from the two
-optional ones below — flag any still
-containing a `<...>` placeholder or left blank. Confirm **Current phase** is set to a real
-phase. If the file is missing, that's the top finding. Call out separately if **Status
+optional ones below — flag any still containing a `<...>` placeholder or left blank.
+Confirm **Current phase** is set to a real phase. If `project-context.md` or
+`.claude/CLAUDE.md` is missing, the project is not set up: the top finding is to run
+`/project-init`. Call out separately if **Status
 tolerances**, **Risk scoring**, or the **Data governance note** are unfilled: RAG and risk
 severity fall back to kit defaults, and the data-governance reminder keeps firing.
 
@@ -30,7 +31,7 @@ each as one of:
 - **Project-specific** — the field holds the project's own values.
 - **Kit default** — the field says "kit defaults" or "kit default" (these values stay in
   English whatever the Artifact language), or repeats the values
-  in `.claude/skills/pmi-project-management/templates/`: the RAG basis comment in
+  in `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/`: the RAG basis comment in
   `status-report.md`, or the scale and severity bands in `risk-register.md`.
 - **Unset** — the field is unfilled, so the kit default applies as PM judgement.
 
@@ -65,7 +66,7 @@ Mark each **Present / Missing / Empty (placeholder only)**.
 
 **3. Ready-to-send checks & cross-document consistency**
 For each artifact that exists, run the ready-to-send checklist at the end of its template in
-`.claude/skills/pmi-project-management/templates/`. For a folder, check its newest file
+`${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/`. For a folder, check its newest file
 only. Report the failed items per file, and one line for a file that passes every item.
 This step always runs, whatever *Ready-to-send checks* says in the project context.
 

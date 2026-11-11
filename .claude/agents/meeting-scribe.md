@@ -20,7 +20,7 @@ files in the repo: `project-context.md`, `project-status.md`, and `docs/`. Read 
   if that field is unfilled.
 
 Start by running the ready-to-send checklist at the end of the matching template —
-`.claude/skills/pmi-project-management/templates/minutes.md` or `agenda.md` — and list each failed item. The checks below go beyond
+`${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/minutes.md` or `agenda.md` — and list each failed item. The checks below go beyond
 it.
 
 ## Checking minutes against the source

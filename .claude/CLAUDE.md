@@ -62,7 +62,13 @@ user can see where it fits in the life cycle.
 
 Each layer has one job. Do not restate one layer's content in another.
 
-- **Templates** (`.claude/skills/pmi-project-management/templates/`) — the single source
+- **Kit files** are named as `${CLAUDE_PLUGIN_ROOT}/.claude/...`. When the kit is
+  installed as a plugin, Claude Code replaces `${CLAUDE_PLUGIN_ROOT}` with the plugin's
+  folder. If you see the text `${CLAUDE_PLUGIN_ROOT}` unreplaced, the kit lives in this
+  repo: read it as the repo root, e.g. `.claude/skills/pmi-project-management/templates/`.
+  As a plugin, the commands carry a prefix: suggest them as `/pm-kit:status-report`, not
+  `/status-report`, when that is how they appear in this session.
+- **Templates** (`pmi-project-management/templates/` in the kit) — the single source
   for an artifact's **structure** and its **ready-to-send checklist** (the HTML comment at
   the end). Read the template; do not rebuild it from memory. Template HTML comments are
   guidance, not content: leave them out of the draft.

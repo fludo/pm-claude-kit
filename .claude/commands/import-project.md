@@ -25,7 +25,7 @@ Also ask: *where does the live project data live?* (Jira, MS Project, spreadshee
 email/docs) so you know what they can paste.
 
 For the status tolerances and the risk scoring, show the kit defaults and ask the user to
-give their own or keep them. In `.claude/skills/pmi-project-management/templates/`, the
+give their own or keep them. In `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/`, the
 defaults are the RAG basis comment in `status-report.md` and the scale and severity bands
 in `risk-register.md`. Ask this even if the rest of the context is filled, unless the field
 already holds project-specific values.
@@ -51,7 +51,7 @@ Sort the material into the kit's artifacts:
 | Decisions already taken (with who decided) | `docs/decision-log.md` |
 
 For any artifact with no source material, create a **stub** from the matching template in
-`.claude/skills/pmi-project-management/templates/`, filled only with what's known and
+`${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/`, filled only with what's known and
 `[TBC]` elsewhere — do not fabricate.
 
 ## Step 3 — Write the files

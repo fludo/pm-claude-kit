@@ -14,7 +14,7 @@ was pasted here or ask the user questions.
 1. **Read first** — `docs/stakeholders.md` if it exists (update in place) and
    `docs/charter.md` for the sponsor and governance names, where present.
 2. **Draft** following the `stakeholder-management` skill and the structure in
-   `.claude/skills/pmi-project-management/templates/stakeholder-register.md`: register, power/interest grid, and engagement actions
+   `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/stakeholder-register.md`: register, power/interest grid, and engagement actions
    for the highest-priority stakeholders. If stakeholders are not listed, infer a candidate
    set from the project context and label it a draft to confirm.
 3. **Flag** assessments of individuals (resistance, influence) as PM judgement — this file

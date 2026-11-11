@@ -23,7 +23,7 @@ was pasted here or ask the user questions.
    section of `docs/decision-log.md`, listing an item once if it appears in both. If the
    new data contradicts the previous report, say so rather than smoothing it over.
 3. **Draft** following the `status-reporting` skill and the structure in
-   `.claude/skills/pmi-project-management/templates/status-report.md`. If the user has a house template, follow it exactly instead.
+   `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/status-report.md`. If the user has a house template, follow it exactly instead.
 4. **RAG** — derive it from the *Status tolerances* in the project context and give a
    one-line rationale. If the field says "kit defaults", apply the template thresholds and
    name the one that set the colour. If it is unfilled, apply the same thresholds and write

@@ -30,7 +30,7 @@ Read it as the named recipient, using their interests, concerns, and key message
 
 ## Reviewing the stakeholder register
 Start by running the ready-to-send checklist at the end of
-`.claude/skills/pmi-project-management/templates/stakeholder-register.md` and list each failed item. Then:
+`${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/stakeholder-register.md` and list each failed item. Then:
 - **Missing stakeholders** — roles implied by the charter, RACI, or sector that are absent.
 - **Classification** — power/interest placements that look inconsistent with the stated
   influence or with what the minutes show.

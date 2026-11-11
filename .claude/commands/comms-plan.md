@@ -14,7 +14,7 @@ was pasted here or ask the user questions.
 1. **Read first** — `docs/stakeholders.md` (every line of the plan ties to a stakeholder
    need; if it does not exist, suggest `/stakeholder-analysis` first) and
    `docs/comms-plan.md` if it exists (update in place).
-2. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/comms-plan.md`. Cover at least sponsor/steering,
+2. **Draft** using the structure in `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/comms-plan.md`. Cover at least sponsor/steering,
    client, project team, vendors/suppliers, and the wider organisation. Take the reporting
    cadence from the *Governance* field of the project context; do not invent one.
 3. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the

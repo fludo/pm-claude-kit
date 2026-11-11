@@ -17,7 +17,7 @@ Follow the four-step PMI cycle:
    Exploit/Enhance/Share/Accept. Give a concrete action and an owner.
 4. **Monitor** — an **early-warning indicator** per top risk and a review cadence.
 
-Use the template at `.claude/skills/pmi-project-management/templates/risk-register.md`.
+Use the template at `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/risk-register.md`.
 When a register already exists, update it in place: keep IDs, change status rather than
 deleting rows. A risk that has occurred becomes *Realised* and moves to the issue log
 (`docs/issue-log.md`). After the first pass, actively hunt

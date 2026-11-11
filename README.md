@@ -10,6 +10,38 @@ paste-the-data-in, and human judgement on the political calls.
 > sponsored by, or otherwise affiliated with Anthropic. "PMI" and "PMBOK" are trademarks of
 > the Project Management Institute, which does not endorse this project either.
 
+## Install
+Pick one route. Both give you the same commands, skills, agents, and templates.
+
+**As a plugin (recommended)** — in Claude Code, from the folder you will keep the project in:
+
+```
+/plugin marketplace add fludo/pm-claude-kit
+/plugin install pm-kit@pm-claude-kit
+/pm-kit:project-init
+```
+
+On Claude Code 2.1.275 or later, the first two lines can be one:
+
+```
+/plugin install pm-kit --marketplace fludo/pm-claude-kit
+```
+
+`/pm-kit:project-init` copies the kit's `CLAUDE.md`, permissions, `project-context.md`, and
+`docs/` folders into your project, asking before it changes any file you already have.
+Start a new session afterwards. As a plugin, every command carries the `pm-kit:` prefix —
+`/pm-kit:status-report` — and the agents are `pm-kit:risk-manager` and so on.
+
+To pick up a kit update, update the plugin, start a new session, and run
+`/pm-kit:project-init` again to see what changed in `CLAUDE.md` and the permissions:
+
+```
+/plugin update pm-kit@pm-claude-kit
+```
+
+**As a clone** — clone this repo and work inside it. Everything is already in place, the
+commands have no prefix (`/status-report`), and `/project-init` only confirms that.
+
 ## Quick start
 1. Fill in **`project-context.md`** at the repo root (Claude reads it automatically). To
    write steering reports in French or German while you work in English, set
@@ -23,6 +55,9 @@ paste-the-data-in, and human judgement on the political calls.
 ## What's inside
 
 ```
+.claude-plugin/
+├── plugin.json               # Plugin manifest: points at the folders under .claude/
+└── marketplace.json          # Lets the plugin install find it from GitHub
 .claude/
 ├── CLAUDE.md                 # Project context block + working principles (auto-loaded)
 ├── settings.json             # Permissions (edits limited to docs/ and the two project files)
@@ -53,6 +88,7 @@ paste-the-data-in, and human judgement on the political calls.
 │   ├── decision-log.md       /decision-log     → Decision log
 │   ├── import-project.md     /import-project   → Onboard an in-flight project
 │   ├── project-check.md      /project-check    → Audit setup / import readiness
+│   ├── project-init.md       /project-init     → Set up a project folder (plugin installs)
 │   ├── sprint-planning.md    /sprint-planning  → Iteration / sprint plan (agile)
 │   ├── backlog-refinement.md /backlog-refinement → Backlog readiness check (agile)
 │   ├── retro.md              /retro            → Iteration retrospective (agile)
@@ -75,7 +111,7 @@ paste-the-data-in, and human judgement on the political calls.
 | Executing | `/agenda`, `/minutes`, `/escalation` |
 | Monitoring & Controlling | `/status-report`, `/change-request`, `/issue-log`, `/decision-log`, `/weekly-monday`, `/weekly-friday` |
 | Closing | `/lessons-learned`, `/closure` |
-| Setup / any phase | `/import-project` (onboard an in-flight project), `/project-check` (audit it's correctly set up) |
+| Setup / any phase | `/project-init` (set up a project folder after a plugin install), `/import-project` (onboard an in-flight project), `/project-check` (audit it's correctly set up) |
 | Agile delivery (methodology-agnostic) | `/sprint-planning`, `/backlog-refinement`, `/retro`, `/pi-planning-prep` |
 
 ## Importing an in-flight project

@@ -13,7 +13,7 @@ schedule, cost, quality, risk, and resources · options considered (always inclu
 "reject / do nothing") with a recommendation · affected stakeholders & approvals · the CCB
 decision block.
 
-Use the template at `.claude/skills/pmi-project-management/templates/change-request.md`.
+Use the template at `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/change-request.md`.
 Measure impact against the baseline in `docs/charter.md`. Number the CR by listing
 `docs/changes/` and taking the next free `CR-NNN`. State unknown impacts as `[TBC]` and
 never invent figures. End with "Information needed to assess impact". The decision belongs

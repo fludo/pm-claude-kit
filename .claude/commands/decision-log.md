@@ -17,7 +17,7 @@ was pasted here or ask the user questions.
 2. **Check it is a decision** — something actually decided, by a named person or body with
    the authority to decide it. If the input shows it was only discussed, or does not say
    who decided, do not log it as decided: list it under "Decisions pending" and ask.
-3. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/decision-log.md`. Record the reason and the
+3. **Draft** using the structure in `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/decision-log.md`. Record the reason and the
    options considered only as far as the input states them; `[TBC]` otherwise. Never tidy
    a decision into something firmer than what was said.
 4. **Supersede, do not edit** — if the new decision changes an earlier one, add a new row
