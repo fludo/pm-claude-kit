@@ -1,6 +1,7 @@
 ---
 name: change-control
 description: Document and assess project changes through integrated change control. Use when the task mentions a change request, scope change, variation, change control board (CCB), baseline change, or assessing the impact of a proposed change on scope/schedule/cost/quality. PMI Knowledge Area: Integration.
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 # Change Control

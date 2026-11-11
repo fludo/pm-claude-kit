@@ -1,6 +1,7 @@
 ---
 description: Draft a communications management plan
 argument-hint: [stakeholders / cadence notes, or a brief]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Draft or update the **communications management plan**.

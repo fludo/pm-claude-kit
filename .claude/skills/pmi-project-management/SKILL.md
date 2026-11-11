@@ -1,6 +1,7 @@
 ---
 name: pmi-project-management
 description: Life-cycle frame and shared templates for the PM kit. Use when the task spans several PM artifacts, asks where something fits in the PMI Process Groups or Knowledge Areas, asks which artifact or command to use next, or needs an artifact with no dedicated skill (charter/PID, RACI, requirements, communications plan, meeting agenda/minutes, lessons learned, closure, issue log, decision log). Risk, stakeholder, status, change-control, and agile work have their own skills — prefer those.
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 # PMI Project Management

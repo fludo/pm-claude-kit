@@ -1,6 +1,7 @@
 ---
 name: stakeholder-management
 description: Map stakeholders and plan/draft communications. Use when the task mentions stakeholders, sponsors, steering committee, clients, power/interest mapping, engagement, escalation emails, difficult conversations, or executive/sponsor updates. PMI Knowledge Areas: Stakeholder + Communications.
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 # Stakeholder Management

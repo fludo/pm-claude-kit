@@ -1,6 +1,7 @@
 ---
 description: Import an already-started project — interview, ingest pasted data, and scaffold context + docs
 argument-hint: [paste any existing material, or a brief, or leave blank]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Onboard an **already-started (in-flight) project** into this kit in one guided pass.

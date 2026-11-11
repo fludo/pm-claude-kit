@@ -1,6 +1,7 @@
 ---
 description: Draft a project charter / Project Initiation Document (PID)
 argument-hint: [project name or brief]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Draft or update the **project charter / Project Initiation Document (PID)**.

@@ -1,6 +1,7 @@
 ---
 description: Facilitate a fast iteration retrospective with action items
 argument-hint: [paste the iteration's notes / observations, or leave blank to facilitate]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Run an **iteration retrospective** (retro) — fast and action-oriented.

@@ -1,6 +1,7 @@
 ---
 description: Build or update a risk register with analysis and responses
 argument-hint: [context, sector, or paste existing risks]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Build or update the **risk register**.

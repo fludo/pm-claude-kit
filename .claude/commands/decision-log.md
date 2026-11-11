@@ -1,6 +1,7 @@
 ---
 description: Record a project decision, or review the decision log
 argument-hint: [the decision and who made it, or leave blank to review]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Add to or review the **decision log**.

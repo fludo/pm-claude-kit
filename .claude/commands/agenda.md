@@ -1,6 +1,7 @@
 ---
 description: Prepare a meeting agenda with discussion points and likely disagreements
 argument-hint: [meeting purpose, attendees, topics]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Prepare a **meeting agenda**.

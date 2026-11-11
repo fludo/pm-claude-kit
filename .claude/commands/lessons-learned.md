@@ -1,6 +1,7 @@
 ---
 description: Facilitate and document a lessons-learned / retrospective
 argument-hint: [phase or project, paste inputs if any]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Produce a **lessons-learned report**.

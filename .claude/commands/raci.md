@@ -1,6 +1,7 @@
 ---
 description: Build a RACI responsibility assignment matrix
 argument-hint: [list of activities and roles, or a brief]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Build or update the **RACI matrix** (Responsible, Accountable, Consulted, Informed).

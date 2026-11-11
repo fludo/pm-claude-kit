@@ -1,6 +1,7 @@
 ---
 description: Map and classify stakeholders on a power/interest grid with engagement plan
 argument-hint: [list of stakeholders or a brief]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Produce or update the **stakeholder analysis**.

@@ -1,6 +1,7 @@
 ---
 description: Draft a period status report from project-status.md or pasted data
 argument-hint: [paste status data, or leave blank to use project-status.md]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Draft a **status report**.

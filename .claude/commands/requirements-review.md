@@ -1,6 +1,7 @@
 ---
 description: Review requirements for ambiguity, testability, and gaps
 argument-hint: [paste requirements or point to a file]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Review the **requirements** for quality.

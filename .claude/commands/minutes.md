@@ -1,6 +1,7 @@
 ---
 description: Turn raw meeting notes or a transcript into minutes with action items
 argument-hint: [paste notes or transcript]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Turn the notes/transcript into **meeting minutes**.

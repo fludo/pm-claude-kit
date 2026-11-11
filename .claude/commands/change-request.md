@@ -1,6 +1,7 @@
 ---
 description: Draft a change request for integrated change control
 argument-hint: [the proposed change]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Draft a **change request (CR)** for integrated change control.

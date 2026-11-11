@@ -1,6 +1,7 @@
 ---
 description: Monday — draft the weekly status report from this week's data
 argument-hint: [paste this week's status data, or leave blank to use project-status.md]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 **Monday routine — weekly status report.**

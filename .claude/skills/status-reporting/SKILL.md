@@ -1,6 +1,7 @@
 ---
 name: status-reporting
 description: Turn project-status.md or pasted project data into a clear period/weekly status report with a RAG status and executive summary. Use when the task mentions status report, weekly report, progress update, project dashboard narrative, RAG/traffic-light status, or steering-committee update. PMI Knowledge Area: Communications.
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 # Status Reporting

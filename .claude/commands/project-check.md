@@ -1,6 +1,7 @@
 ---
 description: Audit that the project is correctly set up / imported — context, artifacts, consistency
 argument-hint: [optional: focus area, e.g. "risks" or "context"]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Run a **project setup & import health check**. Report whether this project is correctly

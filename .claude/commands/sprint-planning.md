@@ -1,6 +1,7 @@
 ---
 description: Plan an iteration / sprint — goal, capacity, and a proposed backlog selection
 argument-hint: [sprint goal, capacity, and candidate backlog items]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Plan an **iteration / sprint** (use the team's own term).

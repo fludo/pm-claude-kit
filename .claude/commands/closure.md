@@ -1,6 +1,7 @@
 ---
 description: Draft a project closure summary / closeout report
 argument-hint: [project, paste final status if any]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Draft a **project closure summary (closeout report)**.

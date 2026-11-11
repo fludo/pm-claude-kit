@@ -1,6 +1,7 @@
 ---
 description: Log, update, or review open project issues
 argument-hint: [the new issue, an update to an existing one, or leave blank to review]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Add to, update, or review the **issue log**.

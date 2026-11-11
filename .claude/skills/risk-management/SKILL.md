@@ -1,6 +1,7 @@
 ---
 name: risk-management
 description: Identify, analyse, respond to, and monitor project risks. Use when the task mentions risk, risk register, risk assessment, probability/impact, mitigation, contingency, issues that might arise, or "what could go wrong" — and for near-term risk reviews (what might crystallise in the next few weeks). PMI Knowledge Area: Risk.
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 # Risk Management

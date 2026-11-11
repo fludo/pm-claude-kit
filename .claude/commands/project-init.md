@@ -1,6 +1,7 @@
 ---
 description: Set up this project folder for the kit — project context, CLAUDE.md, permissions, and docs folders
 argument-hint: [optional: leave blank]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Set up the current project folder so the kit works here. Needed once after installing the
