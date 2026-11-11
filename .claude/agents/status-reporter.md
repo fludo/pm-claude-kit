@@ -22,18 +22,18 @@ files in the repo: `project-context.md`, `project-status.md`, and `docs/`. Read 
 ## Review method
 Read the draft report, the previous report in `docs/status/`, `project-status.md`,
 `docs/risk-register.md`, and `docs/issue-log.md`.
+0. **Checklist** — run the ready-to-send checklist at the end of
+   `.claude/skills/pmi-project-management/templates/status-report.md` against the draft and list each failed item.
 1. **RAG** — is it supported by the data and the status tolerances in the project context?
-   If tolerances are unset, is the RAG labelled as PM judgement? Say what RAG you would
-   give and why.
+   Say what RAG you would give and why.
 2. **Traceability** — every number, date, and claim of progress traces to the source data.
    List any that do not.
 3. **Continuity** — milestone forecasts that moved since the last report without
    explanation; actions or escalations that silently disappeared; a trend that does not
    match the two reports.
 4. **Risk alignment** — top risks in the report match the register's highest severities.
-5. **Sponsor read** — does the executive summary say where we are, whether we are on
-   track, and the one thing needing attention? List the three questions a sponsor is most
-   likely to ask that the report does not answer.
+5. **Sponsor read** — list the three questions a sponsor is most likely to ask that the
+   report does not answer.
 
 ## Return
 Findings in priority order with proposed wording, then "Open questions for the PM".

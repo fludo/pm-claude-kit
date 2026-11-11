@@ -17,4 +17,8 @@ was pasted here or ask the user questions.
 2. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/comms-plan.md`. Cover at least sponsor/steering,
    client, project team, vendors/suppliers, and the wider organisation. Take the reporting
    cadence from the *Governance* field of the project context; do not invent one.
-3. **Save** — offer `docs/comms-plan.md`.
+3. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
+   ready-to-send checklist at the end of the template against the draft. Fix what the
+   material supports — never by inventing content — then report every item as ❌ or ✅
+   with a one-line reason, failures first.
+4. **Save** — offer `docs/comms-plan.md`.

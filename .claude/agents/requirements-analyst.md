@@ -20,9 +20,13 @@ files in the repo: `project-context.md`, `project-status.md`, and `docs/`. Read 
   if that field is unfilled.
 
 ## Review checklist (per requirement)
+First run the ready-to-send checklist at the end of
+`.claude/skills/pmi-project-management/templates/requirements.md` against the file and list each failed item. Then judge each
+requirement:
 - **Clear** — one interpretation only; no vague terms ("fast", "user-friendly", "robust")
   without a measure.
-- **Testable / measurable** — can you write an acceptance test? If not, flag it.
+- **Testable / measurable** — could you write an acceptance test from its acceptance
+  criterion? If not, flag it.
 - **Atomic** — a single requirement, not several bundled with "and/or".
 - **Feasible & consistent** — not in conflict with another requirement or a constraint.
 - **Traceable** — tied to an objective in the charter or a stakeholder need.

@@ -29,4 +29,8 @@ was pasted here or ask the user questions.
    name the one that set the colour. If it is unfilled, apply the same thresholds and write
    "PM judgement — tolerances [TBC]".
 5. **Close** with "Data I still need".
-6. **Save** — offer `docs/status/status-YYYY-MM-DD.md` (the report date).
+6. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
+   ready-to-send checklist at the end of the template against the draft. Fix what the
+   material supports — never by inventing content — then report every item as ❌ or ✅
+   with a one-line reason, failures first.
+7. **Save** — offer `docs/status/status-YYYY-MM-DD.md` (the report date).

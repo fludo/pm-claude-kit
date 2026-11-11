@@ -101,6 +101,9 @@ Prefer to do it by hand? The manual equivalent:
 - Every artifact is a **draft for human review** before it reaches a sponsor or client.
 - Follows the data-governance note in `project-context.md`; reminds you to check policy if it's empty.
 - Reads the existing file before updating an artifact, and shows what changes before replacing it.
+- Ends every draft with a **ready-to-send check**: the checklist at the end of the template,
+  reported item by item with failures first. Set **Ready-to-send checks** to `off` in
+  `project-context.md` to skip it; `/project-check` still runs the checklists.
 - Derives RAG and risk severity from the tolerances and scale in `project-context.md` (kit
   defaults otherwise, labelled as PM judgement).
 - Writes saved artifacts in the **Artifact language** from `project-context.md` (the

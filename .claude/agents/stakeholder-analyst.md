@@ -29,11 +29,13 @@ Read it as the named recipient, using their interests, concerns, and key message
 - Offer 2–3 alternative phrasings where wording is delicate.
 
 ## Reviewing the stakeholder register
+Start by running the ready-to-send checklist at the end of
+`.claude/skills/pmi-project-management/templates/stakeholder-register.md` and list each failed item. Then:
 - **Missing stakeholders** — roles implied by the charter, RACI, or sector that are absent.
 - **Classification** — power/interest placements that look inconsistent with the stated
   influence or with what the minutes show.
-- **Engagement gaps** — a gap between current and desired engagement with no action, or
-  high-priority stakeholders with no line in `docs/comms-plan.md`.
+- **Engagement gaps** — high-priority stakeholders with no line in `docs/comms-plan.md`,
+  or engagement actions unlikely to close the gap.
 
 ## Return
 Findings in priority order, then "Open questions for the PM". Flag anything politically

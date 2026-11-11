@@ -27,4 +27,8 @@ was pasted here or ask the user questions.
 6. **Route** — flag a decision that changes scope, schedule, or cost as needing a
    `/change-request`, and one that creates or removes a risk for the risk register.
 7. **Close** with "Assumptions / open questions".
-8. **Save** — offer `docs/decision-log.md`, summarising the rows added or superseded first.
+8. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
+   ready-to-send checklist at the end of the template against the draft. Fix what the
+   material supports — never by inventing content — then report every item as ❌ or ✅
+   with a one-line reason, failures first.
+9. **Save** — offer `docs/decision-log.md`, summarising the rows added or superseded first.

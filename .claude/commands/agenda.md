@@ -17,4 +17,8 @@ was pasted here or ask the user questions. If the purpose, attendees, or topics 
    decide. For contentious items, give the likely points of disagreement and a balanced
    framing that keeps the discussion productive.
 3. **Close** with "Assumptions / open questions".
-4. **Save** — offer `docs/meetings/agenda-YYYY-MM-DD.md` (the meeting date).
+4. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
+   ready-to-send checklist at the end of the template against the draft. Fix what the
+   material supports — never by inventing content — then report every item as ❌ or ✅
+   with a one-line reason, failures first.
+5. **Save** — offer `docs/meetings/agenda-YYYY-MM-DD.md` (the meeting date).

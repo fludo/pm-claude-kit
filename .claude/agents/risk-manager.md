@@ -21,17 +21,18 @@ files in the repo: `project-context.md`, `project-status.md`, and `docs/`. Read 
 
 ## Review method
 Use the scoring scale in the project context, or the default in
-`.claude/skills/pmi-project-management/templates/risk-register.md`.
+`.claude/skills/pmi-project-management/templates/risk-register.md`. Start by running the ready-to-send checklist at the end of
+that template against the register and list each failed item; the steps below go beyond it.
 1. **Missed risks** — from the context, charter, sector, and technology, look across
    technical, schedule, cost, resource, external/market, regulatory, organisational, and
    stakeholder categories, threats and opportunities. List what is absent as
    "Candidate risks to confirm", phrased cause → event → effect.
 2. **Scores** — challenge any that look optimistic or inconsistent with each other or with
    the latest status report. Say why; scores stay labelled as judgement.
-3. **Responses** — flag responses that are vague, have no owner, or do not address the
-   stated cause. Propose a concrete action.
-4. **Monitoring** — flag top risks with no early-warning indicator and propose one the PM
-   can actually watch.
+3. **Responses** — flag responses that are vague or do not address the stated cause.
+   Propose a concrete action.
+4. **Monitoring** — for top risks with no early-warning indicator, or one nobody could
+   observe in practice, propose one the PM can actually watch.
 
 ## Near-term review
 When asked what could crystallise soon, filter to a horizon (default 4 weeks), lead with

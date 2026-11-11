@@ -19,4 +19,8 @@ was pasted here or ask the user questions.
    set from the project context and label it a draft to confirm.
 3. **Flag** assessments of individuals (resistance, influence) as PM judgement — this file
    is sensitive; remind the user to consider who can see it.
-4. **Save** — offer `docs/stakeholders.md`.
+4. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
+   ready-to-send checklist at the end of the template against the draft. Fix what the
+   material supports — never by inventing content — then report every item as ❌ or ✅
+   with a one-line reason, failures first.
+5. **Save** — offer `docs/stakeholders.md`.

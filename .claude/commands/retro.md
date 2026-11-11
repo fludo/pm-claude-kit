@@ -18,4 +18,8 @@ rather than inventing them.
 2. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/retro.md`. "What didn't" names a root cause, not a
    symptom. Every action has an owner or `[owner TBC]`. Keep actions to the few that will
    actually get done. Be faithful to the notes; do not invent what the team said.
-3. **Save** — offer `docs/sprints/sprint-NN-retro.md`.
+3. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
+   ready-to-send checklist at the end of the template against the draft. Fix what the
+   material supports — never by inventing content — then report every item as ❌ or ✅
+   with a one-line reason, failures first.
+4. **Save** — offer `docs/sprints/sprint-NN-retro.md`.

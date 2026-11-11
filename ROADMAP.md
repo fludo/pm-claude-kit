@@ -50,8 +50,8 @@ prep (skill `agile-delivery`). Still planned:*
   would format output for copy-in, not call live APIs.
 
 ---
-*When adding an item: follow the existing layering — structure in a template under
-`pmi-project-management/templates/`, method in a skill in `.claude/skills/`, a slash
+*When adding an item: follow the existing layering — structure and a ready-to-send
+checklist in a template under `pmi-project-management/templates/`, method in a skill in `.claude/skills/`, a slash
 command in `.claude/commands/` that drafts inline and reads existing files first, and an
 agent in `.claude/agents/` only where an independent review adds value. Keep the draft-for-review, no-fabricated-
 numbers discipline.*

@@ -19,4 +19,8 @@ invent velocity, estimates, or capacity.
    committed** — the team commits. Give a reason for each item not selected. Flag risks
    and dependencies that belong in the risk register.
 3. **Close** with "Open questions before the team commits".
-4. **Save** — offer `docs/sprints/sprint-NN-plan.md`.
+4. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
+   ready-to-send checklist at the end of the template against the draft. Fix what the
+   material supports — never by inventing content — then report every item as ❌ or ✅
+   with a one-line reason, failures first.
+5. **Save** — offer `docs/sprints/sprint-NN-plan.md`.

@@ -63,10 +63,14 @@ user can see where it fits in the life cycle.
 Each layer has one job. Do not restate one layer's content in another.
 
 - **Templates** (`.claude/skills/pmi-project-management/templates/`) — the single source
-  for an artifact's **structure**. Read the template; do not rebuild it from memory.
+  for an artifact's **structure** and its **ready-to-send checklist** (the HTML comment at
+  the end). Read the template; do not rebuild it from memory. Template HTML comments are
+  guidance, not content: leave them out of the draft.
 - **Skills** — the **method** for a knowledge area (how to analyse, what to check).
 - **Commands** — produce **one artifact, inline in the main conversation**: gather input,
-  read existing files, apply the skill and template, offer to save.
+  read existing files, apply the skill and template, run the template's checklist, offer
+  to save. Setting **Ready-to-send checks** to `off` in the project context skips that
+  checklist report; `/project-check` and the agents still run the checklists when asked.
 - **Agents** — an **independent second pass** on a saved artifact. They start without the
   conversation, cannot ask the user questions, and do not write files. Never use one to
   draft from data that was pasted into the conversation.

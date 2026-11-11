@@ -18,4 +18,8 @@ inventing them.
    closed and occurred risks in `docs/risk-register.md` as evidence, where present.
 2. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/lessons-learned.md`. "What went poorly" names a
    root cause, not a symptom. Every recommendation has an owner or `[owner TBC]`.
-3. **Save** — offer `docs/lessons-learned.md`.
+3. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
+   ready-to-send checklist at the end of the template against the draft. Fix what the
+   material supports — never by inventing content — then report every item as ❌ or ✅
+   with a one-line reason, failures first.
+4. **Save** — offer `docs/lessons-learned.md`.

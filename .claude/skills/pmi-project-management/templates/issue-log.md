@@ -24,3 +24,14 @@ period to avoid that · Low = can wait. Priority is PM judgement.
 
 ## Open questions for the PM
 - …
+
+<!-- Ready to send? Tick every item before this goes to a sponsor or client. Each item
+passes or fails on this document alone. This comment is guidance, not content: leave it
+out of the draft.
+- [ ] Every open issue has an owner or `[owner TBC]`, a next action, and a target date or `[TBC]`.
+- [ ] Every priority is High, Medium, or Low, and every status is one listed above.
+- [ ] No open issue has a target date before the *Last reviewed* date unless its status is Escalated.
+- [ ] Every row under *Closed this period* has a resolution and a closing date.
+- [ ] Every `[TBC]` is covered by an entry under *Open questions for the PM* (one entry may cover several).
+- [ ] No template prompt (`<...>`) or `…` placeholder is left; a section with nothing to report says so.
+-->

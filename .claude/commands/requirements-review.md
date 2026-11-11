@@ -19,7 +19,11 @@ the requirements or a file path.
    silently — label anything new "candidate requirement to confirm".
 3. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/requirements.md`: register, review findings,
    scope gaps, conflicts/duplicates, open questions for stakeholders.
-4. **Save** — offer `docs/requirements.md`.
+4. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
+   ready-to-send checklist at the end of the template against the draft. Fix what the
+   material supports — never by inventing content — then report every item as ❌ or ✅
+   with a one-line reason, failures first.
+5. **Save** — offer `docs/requirements.md`.
 
 For a large or contested set, suggest the `requirements-analyst` agent for an independent
 second review of the saved file.

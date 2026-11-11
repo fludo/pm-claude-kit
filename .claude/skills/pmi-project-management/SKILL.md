@@ -34,6 +34,13 @@ Each artifact's structure lives in `templates/` (from the repo root:
 `.claude/skills/pmi-project-management/templates/`). Read the matching template and tailor it
 to the project context; do not restate its structure elsewhere.
 
+Each template ends with a **ready-to-send checklist** in an HTML comment: 4–7 pass/fail
+items checkable from the document alone. Commands run it after drafting, and
+`/project-check` and the reviewer agents read it from the template, so a per-artifact check
+is written there once. A check that compares two files belongs in `/project-check`.
+Checklist items never demand a fixed count or forbid `[TBC]`; they ask that every `[TBC]`
+is listed under the artifact's open questions.
+
 | Template | Artifact | Command |
 |---|---|---|
 | `charter.md` | Charter / PID | `/charter` |

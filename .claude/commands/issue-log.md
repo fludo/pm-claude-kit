@@ -25,4 +25,8 @@ was pasted here or ask the user questions.
    needs a sponsor decision.
 5. **Route** — if the issue came from a risk, propose setting that risk to *Realised*. If
    resolving it changes a baseline, point to `/change-request`.
-6. **Save** — offer `docs/issue-log.md`, summarising rows added, changed, and closed first.
+6. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
+   ready-to-send checklist at the end of the template against the draft. Fix what the
+   material supports — never by inventing content — then report every item as ❌ or ✅
+   with a one-line reason, failures first.
+7. **Save** — offer `docs/issue-log.md`, summarising rows added, changed, and closed first.

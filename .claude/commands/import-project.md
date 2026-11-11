@@ -68,8 +68,10 @@ For any artifact with no source material, create a **stub** from the matching te
    `[TBC — paste from <tool>]` marker and list it in the summary.
 
 ## Step 4 — Verify
-Run the same checks as `/project-check` and output:
-- **What was imported** — file-by-file, with a one-line note each.
+Run the same checks as `/project-check` — including the ready-to-send checklist of every
+file written, whatever *Ready-to-send checks* says — and output:
+- **What was imported** — file-by-file, with a one-line note each and its checklist
+  result: the failed items first, then the number of items passed.
 - **What's still needed** — the `[TBC]` items and which tool/source to pull them from, and
   whether RAG or risk scoring is still on kit defaults.
 - **Suggested next commands** — e.g. `/risk-register` to expand the risk stub,

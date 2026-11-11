@@ -19,17 +19,20 @@ files in the repo: `project-context.md`, `project-status.md`, and `docs/`. Read 
   in the *Artifact language* from `project-context.md`, or in the document's own language
   if that field is unfilled.
 
+Start by running the ready-to-send checklist at the end of the matching template —
+`.claude/skills/pmi-project-management/templates/minutes.md` or `agenda.md` — and list each failed item. The checks below go beyond
+it.
+
 ## Checking minutes against the source
 - **Missed** — decisions, actions, or risks in the source that are absent from the minutes.
 - **Overstated** — items recorded as decided that the source shows were only discussed, and
   commitments nobody actually made. Quote the source line.
-- **Incomplete actions** — no owner, no due date, or an owner the source does not support.
+- **Unsupported owners** — an action owner or due date the source does not support.
 - **Not routed** — risks or changes raised that are not in `docs/risk-register.md` or
   `docs/changes/`.
 
 ## Stress-testing an agenda
-- Does each item state inform / discuss / decide, an owner, and a realistic time?
-- Do the times add up to the slot? Are the decisions that must be made actually scheduled?
+- Are the times realistic, and do they add up to the slot?
 - For contentious items: which disagreement is most likely to derail the meeting, and is
   the prepared framing balanced?
 - Are open actions from the previous minutes carried forward?

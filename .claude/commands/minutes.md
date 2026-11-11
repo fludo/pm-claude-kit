@@ -21,4 +21,8 @@ was pasted here or ask the user questions. If nothing is pasted, ask for the not
    `docs/issue-log.md`, risks raised that are not in `docs/risk-register.md`, and changes
    that need a `/change-request`. Do not update those files without the user's go-ahead.
 4. **Close** with "Assumptions / open questions".
-5. **Save** — offer `docs/meetings/minutes-YYYY-MM-DD.md` (the meeting date).
+5. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
+   ready-to-send checklist at the end of the template against the draft. Fix what the
+   material supports — never by inventing content — then report every item as ❌ or ✅
+   with a one-line reason, failures first.
+6. **Save** — offer `docs/meetings/minutes-YYYY-MM-DD.md` (the meeting date).

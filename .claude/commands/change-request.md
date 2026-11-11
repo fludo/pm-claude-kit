@@ -20,4 +20,8 @@ was pasted here or ask the user questions.
    "reject / do nothing", with a recommendation. Leave the decision block for the CCB.
 3. **Close** with "Information needed to assess impact" and note any risk-register or
    schedule updates that approval would trigger.
-4. **Save** — offer `docs/changes/CR-NNN.md`.
+4. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
+   ready-to-send checklist at the end of the template against the draft. Fix what the
+   material supports — never by inventing content — then report every item as ❌ or ✅
+   with a one-line reason, failures first.
+5. **Save** — offer `docs/changes/CR-NNN.md`.

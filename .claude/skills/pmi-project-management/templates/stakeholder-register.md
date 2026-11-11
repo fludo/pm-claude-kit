@@ -19,3 +19,17 @@ Engagement levels: Unaware · Resistant · Neutral · Supportive · Leading.
 | Stakeholder | Action | Channel | Frequency | Owner |
 |-------------|--------|---------|-----------|-------|
 |             |        |         |           |       |
+
+## Open questions
+- …
+
+<!-- Ready to send? Tick every item before this goes to a sponsor or client. Each item
+passes or fails on this document alone. This comment is guidance, not content: leave it
+out of the draft.
+- [ ] Every stakeholder has an influence rating, a current and a desired engagement level from the list, and a key message — each a value or `[TBC]`.
+- [ ] Every stakeholder in the register appears in exactly one quadrant of the grid.
+- [ ] Every stakeholder whose current engagement differs from the desired level has a row under *Engagement actions*.
+- [ ] Every engagement action has a channel, a frequency, and an owner or `[owner TBC]`.
+- [ ] Every `[TBC]` is covered by an entry under *Open questions* (one entry may cover several).
+- [ ] No template prompt (`<...>`) or `…` placeholder is left; a section with nothing to report says so.
+-->
