@@ -1,13 +1,14 @@
 ---
 description: Monday — draft the weekly status report from this week's data
 argument-hint: [paste this week's status data, or leave blank to use project-status.md]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 **Monday routine — weekly status report.**
 
 Status data for this week: $ARGUMENTS
 
-Follow the steps in `.claude/commands/status-report.md`, with these weekly settings:
+Follow the steps in `${CLAUDE_PLUGIN_ROOT}/.claude/commands/status-report.md`, with these weekly settings:
 
 - **Period** — the week just ended (Monday–Sunday) unless the user says otherwise.
 - **Stale data check** — if using `project-status.md` and its "As of" date is more than a

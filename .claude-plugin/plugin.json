@@ -1,0 +1,24 @@
+{
+  "name": "pm-kit",
+  "displayName": "PM Kit",
+  "version": "1.0.0",
+  "description": "PMI-aligned project management assistant: drafts charters, risk registers, status reports, minutes and more as reviewable docs, with read-only reviewer agents. Run /pm-kit:project-init in each project first.",
+  "author": {
+    "name": "Ludovic Favre",
+    "url": "https://github.com/fludo"
+  },
+  "homepage": "https://github.com/fludo/pm-claude-kit",
+  "repository": "https://github.com/fludo/pm-claude-kit",
+  "license": "MIT",
+  "keywords": ["project-management", "pmi", "status-report", "risk-register", "agile"],
+  "commands": "./.claude/commands/",
+  "skills": "./.claude/skills/",
+  "agents": [
+    "./.claude/agents/meeting-scribe.md",
+    "./.claude/agents/pm-thinking-partner.md",
+    "./.claude/agents/requirements-analyst.md",
+    "./.claude/agents/risk-manager.md",
+    "./.claude/agents/stakeholder-analyst.md",
+    "./.claude/agents/status-reporter.md"
+  ]
+}

@@ -1,6 +1,7 @@
 ---
 description: Import an already-started project — interview, ingest pasted data, and scaffold context + docs
 argument-hint: [paste any existing material, or a brief, or leave blank]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Onboard an **already-started (in-flight) project** into this kit in one guided pass.
@@ -17,21 +18,24 @@ If `project-context.md` is already filled, read it and skip what's known. Otherw
 user — in one batched set of questions — for the context block fields:
 project name/code, PM role & authority, org/sector, methodology, governance & reporting
 cadence, key constraints, primary stakeholders, **current phase** (the real one), the
-**status tolerances** behind a Red/Amber/Green call, the **risk scoring** scale in use, and
-the **data governance note** (what may be pasted here).
+**status tolerances** behind a Red/Amber/Green call, the **risk scoring** scale in use, the
+**artifact language** (the language saved documents should be written in — skip it if that
+is the language they are writing to you in), and the **data governance note** (what may be
+pasted here).
 Also ask: *where does the live project data live?* (Jira, MS Project, spreadsheets,
 email/docs) so you know what they can paste.
 
 For the status tolerances and the risk scoring, show the kit defaults and ask the user to
-give their own or keep them. In `.claude/skills/pmi-project-management/templates/`, the
+give their own or keep them. In `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/`, the
 defaults are the RAG basis comment in `status-report.md` and the scale and severity bands
 in `risk-register.md`. Ask this even if the rest of the context is filled, unless the field
 already holds project-specific values.
 
 ## Step 2 — Ingest what exists
 Accept whatever the user pastes or points to (exports, notes, old status emails, a charter
-draft, a task list). **Organise it; never invent.** Sort the material into the kit's
-artifacts:
+draft, a task list). **Organise it; never invent.** Material in another language is
+translated into the artifact language; names, IDs, figures, and dates are copied exactly.
+Sort the material into the kit's artifacts:
 
 | Source material | Target file |
 |---|---|
@@ -48,7 +52,7 @@ artifacts:
 | Decisions already taken (with who decided) | `docs/decision-log.md` |
 
 For any artifact with no source material, create a **stub** from the matching template in
-`.claude/skills/pmi-project-management/templates/`, filled only with what's known and
+`${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/`, filled only with what's known and
 `[TBC]` elsewhere — do not fabricate.
 
 ## Step 3 — Write the files
@@ -65,8 +69,10 @@ For any artifact with no source material, create a **stub** from the matching te
    `[TBC — paste from <tool>]` marker and list it in the summary.
 
 ## Step 4 — Verify
-Run the same checks as `/project-check` and output:
-- **What was imported** — file-by-file, with a one-line note each.
+Run the same checks as `/project-check` — including the ready-to-send checklist of every
+file written, whatever *Ready-to-send checks* says — and output:
+- **What was imported** — file-by-file, with a one-line note each and its checklist
+  result: the failed items first, then the number of items passed.
 - **What's still needed** — the `[TBC]` items and which tool/source to pull them from, and
   whether RAG or risk scoring is still on kit defaults.
 - **Suggested next commands** — e.g. `/risk-register` to expand the risk stub,

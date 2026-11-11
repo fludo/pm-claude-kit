@@ -1,0 +1,15 @@
+{
+  "name": "pm-claude-kit",
+  "description": "PM Kit: a PMI-aligned project management assistant for Claude Code.",
+  "owner": {
+    "name": "Ludovic Favre",
+    "url": "https://github.com/fludo"
+  },
+  "plugins": [
+    {
+      "name": "pm-kit",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

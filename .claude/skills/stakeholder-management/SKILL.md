@@ -1,6 +1,7 @@
 ---
 name: stakeholder-management
 description: Map stakeholders and plan/draft communications. Use when the task mentions stakeholders, sponsors, steering committee, clients, power/interest mapping, engagement, escalation emails, difficult conversations, or executive/sponsor updates. PMI Knowledge Areas: Stakeholder + Communications.
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 # Stakeholder Management
@@ -11,7 +12,7 @@ and purpose.
 **Analysis:** build the register and classify on a power/interest grid (Manage closely ·
 Keep satisfied · Keep informed · Monitor). For each stakeholder capture interests,
 concerns, influence, current vs. desired engagement, and the key message. Use the template
-at `.claude/skills/pmi-project-management/templates/stakeholder-register.md`.
+at `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/stakeholder-register.md`.
 
 **Communications:** state audience and purpose up front. For executive comms use
 situation → impact → options → recommendation → ask. For **escalation emails**:

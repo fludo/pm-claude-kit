@@ -1,6 +1,7 @@
 ---
 description: Facilitate and document a lessons-learned / retrospective
 argument-hint: [phase or project, paste inputs if any]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Produce a **lessons-learned report**.
@@ -16,6 +17,11 @@ inventing them.
 1. **Read first** — `docs/lessons-learned.md` if it exists (append the new phase; do not
    overwrite earlier ones), plus retros in `docs/sprints/`, `docs/changes/`, and the
    closed and occurred risks in `docs/risk-register.md` as evidence, where present.
-2. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/lessons-learned.md`. "What went poorly" names a
+2. **Draft** using the structure in `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/lessons-learned.md`. "What went poorly" names a
    root cause, not a symptom. Every recommendation has an owner or `[owner TBC]`.
-3. **Save** — offer `docs/lessons-learned.md`.
+3. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
+   ready-to-send checklist at the end of the template against the draft. Fix what the
+   material supports — never by inventing content — then report every item as ❌ or ✅
+   with a one-line reason, failures first, in the language the user writes in (not the
+   Artifact language).
+4. **Save** — offer `docs/lessons-learned.md`.

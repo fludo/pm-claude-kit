@@ -1,6 +1,7 @@
 ---
 name: pmi-project-management
 description: Life-cycle frame and shared templates for the PM kit. Use when the task spans several PM artifacts, asks where something fits in the PMI Process Groups or Knowledge Areas, asks which artifact or command to use next, or needs an artifact with no dedicated skill (charter/PID, RACI, requirements, communications plan, meeting agenda/minutes, lessons learned, closure, issue log, decision log). Risk, stakeholder, status, change-control, and agile work have their own skills — prefer those.
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 # PMI Project Management
@@ -10,6 +11,8 @@ Claude is **not** a system of record: it never reads live Jira/budgets/Project f
 never invents figures or dates.
 
 ## 1. Always establish context first
+If this project has no `project-context.md` and no `.claude/CLAUDE.md`, the kit was
+installed as a plugin but the project is not set up yet: suggest `/project-init` first.
 The project context block from `project-context.md` is loaded with `CLAUDE.md`. Fields
 that are blank or still `<...>` are unknown: ask once for what the task needs, then proceed
 with clearly labelled assumptions. State the **audience and output format** for every
@@ -30,9 +33,16 @@ Name the **Process Group** and **Knowledge Area** each artifact serves.
 Communications · Risk · Procurement · Stakeholder.
 
 ## 3. Templates — the single source for structure
-Each artifact's structure lives in `templates/` (from the repo root:
-`.claude/skills/pmi-project-management/templates/`). Read the matching template and tailor it
-to the project context; do not restate its structure elsewhere.
+Each artifact's structure lives in
+`${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/`. Read the matching
+template and tailor it to the project context; do not restate its structure elsewhere.
+
+Each template ends with a **ready-to-send checklist** in an HTML comment: 4–7 pass/fail
+items checkable from the document alone. Commands run it after drafting, and
+`/project-check` and the reviewer agents read it from the template, so a per-artifact check
+is written there once. A check that compares two files belongs in `/project-check`.
+Checklist items never demand a fixed count or forbid `[TBC]`; they ask that every `[TBC]`
+is listed under the artifact's open questions.
 
 | Template | Artifact | Command |
 |---|---|---|

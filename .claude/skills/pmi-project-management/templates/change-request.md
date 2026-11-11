@@ -38,3 +38,14 @@
 
 ---
 **Information needed to assess impact:** …
+
+<!-- Ready to send? Tick every item before this goes to a sponsor or client. Each item
+passes or fails on this document alone; a `[TBC]` never fails an item on its own. This
+comment is guidance, not content: leave it out of the draft.
+- [ ] The header gives a `CR-NNN` ID, a title, a date, and who requested it (or `[TBC]`).
+- [ ] Every impact row — scope, schedule, cost, quality, risk, resources — states an impact or `[TBC]`; no cell is blank.
+- [ ] The options include "Reject / do nothing", and a recommendation is stated.
+- [ ] The CCB decision row is blank, or records a decision together with its approver and date.
+- [ ] Every `[TBC]` is covered by an entry under *Information needed to assess impact* (one entry may cover several).
+- [ ] No template prompt (`<...>`) or `…` placeholder is left; a section with nothing to report says so.
+-->

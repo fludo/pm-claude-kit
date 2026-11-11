@@ -10,8 +10,44 @@ paste-the-data-in, and human judgement on the political calls.
 > sponsored by, or otherwise affiliated with Anthropic. "PMI" and "PMBOK" are trademarks of
 > the Project Management Institute, which does not endorse this project either.
 
+## Install
+Pick one route. Both give you the same commands, skills, agents, and templates.
+
+**As a plugin (recommended)** — in Claude Code, from the folder you will keep the project in:
+
+```
+/plugin marketplace add fludo/pm-claude-kit
+/plugin install pm-kit@pm-claude-kit
+/pm-kit:project-init
+```
+
+On Claude Code 2.1.275 or later, the first two lines can be one:
+
+```
+/plugin install pm-kit --marketplace fludo/pm-claude-kit
+```
+
+`/pm-kit:project-init` copies the kit's `CLAUDE.md`, permissions, `project-context.md`, and
+`docs/` folders into your project, asking before it changes any file you already have.
+Start a new session afterwards. As a plugin, every command carries the `pm-kit:` prefix —
+`/pm-kit:status-report` — and the agents are `pm-kit:risk-manager` and so on.
+
+Releases are versioned (`version` in `.claude-plugin/plugin.json`); you stay on your
+installed version until you update. To pick up a new release, update the plugin, start a
+new session, and run `/pm-kit:project-init` again to see what changed in `CLAUDE.md` and
+the permissions:
+
+```
+/plugin update pm-kit@pm-claude-kit
+```
+
+**As a clone** — clone this repo and work inside it. Everything is already in place, the
+commands have no prefix (`/status-report`), and `/project-init` only confirms that.
+
 ## Quick start
-1. Fill in **`project-context.md`** at the repo root (Claude reads it automatically).
+1. Fill in **`project-context.md`** at the repo root (Claude reads it automatically). To
+   write steering reports in French or German while you work in English, set
+   **Artifact language**.
 2. Use a slash command, e.g. `/charter`, `/risk-register`, `/status-report`.
 3. Optionally copy the `project-status.md` template to the repo root and keep your current
    progress, milestones, and budget there — `/status-report` and `/weekly-monday` read it.
@@ -21,9 +57,12 @@ paste-the-data-in, and human judgement on the political calls.
 ## What's inside
 
 ```
+.claude-plugin/
+├── plugin.json               # Plugin manifest: points at the folders under .claude/
+└── marketplace.json          # Lets the plugin install find it from GitHub
 .claude/
 ├── CLAUDE.md                 # Project context block + working principles (auto-loaded)
-├── settings.json             # Permissions (edits limited to docs/ and the two project files)
+├── settings.json             # Permissions (edits limited to docs/ and the two project files; reads the installed kit)
 ├── agents/                   # Read-only reviewers for a second pass on saved artifacts
 │   ├── risk-manager.md
 │   ├── stakeholder-analyst.md
@@ -51,6 +90,7 @@ paste-the-data-in, and human judgement on the political calls.
 │   ├── decision-log.md       /decision-log     → Decision log
 │   ├── import-project.md     /import-project   → Onboard an in-flight project
 │   ├── project-check.md      /project-check    → Audit setup / import readiness
+│   ├── project-init.md       /project-init     → Set up a project folder (plugin installs)
 │   ├── sprint-planning.md    /sprint-planning  → Iteration / sprint plan (agile)
 │   ├── backlog-refinement.md /backlog-refinement → Backlog readiness check (agile)
 │   ├── retro.md              /retro            → Iteration retrospective (agile)
@@ -73,7 +113,7 @@ paste-the-data-in, and human judgement on the political calls.
 | Executing | `/agenda`, `/minutes`, `/escalation` |
 | Monitoring & Controlling | `/status-report`, `/change-request`, `/issue-log`, `/decision-log`, `/weekly-monday`, `/weekly-friday` |
 | Closing | `/lessons-learned`, `/closure` |
-| Setup / any phase | `/import-project` (onboard an in-flight project), `/project-check` (audit it's correctly set up) |
+| Setup / any phase | `/project-init` (set up a project folder after a plugin install), `/import-project` (onboard an in-flight project), `/project-check` (audit it's correctly set up) |
 | Agile delivery (methodology-agnostic) | `/sprint-planning`, `/backlog-refinement`, `/retro`, `/pi-planning-prep` |
 
 ## Importing an in-flight project
@@ -99,8 +139,14 @@ Prefer to do it by hand? The manual equivalent:
 - Every artifact is a **draft for human review** before it reaches a sponsor or client.
 - Follows the data-governance note in `project-context.md`; reminds you to check policy if it's empty.
 - Reads the existing file before updating an artifact, and shows what changes before replacing it.
+- Ends every draft with a **ready-to-send check**: the checklist at the end of the template,
+  reported item by item with failures first. Set **Ready-to-send checks** to `off` in
+  `project-context.md` to skip it; `/project-check` still runs the checklists.
 - Derives RAG and risk severity from the tolerances and scale in `project-context.md` (kit
   defaults otherwise, labelled as PM judgement).
+- Writes saved artifacts in the **Artifact language** from `project-context.md` (the
+  language you write in, if it is unset) and keeps talking to you in your own language.
+  `[TBC]`, IDs such as `CR-NNN`, file names, dates, and figures never change.
 
 Generated artifacts are suggested into `docs/` (e.g. `docs/charter.md`,
 `docs/risk-register.md`, `docs/status/`, `docs/meetings/`, `docs/changes/`,

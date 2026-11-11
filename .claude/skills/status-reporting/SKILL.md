@@ -1,6 +1,7 @@
 ---
 name: status-reporting
 description: Turn project-status.md or pasted project data into a clear period/weekly status report with a RAG status and executive summary. Use when the task mentions status report, weekly report, progress update, project dashboard narrative, RAG/traffic-light status, or steering-committee update. PMI Knowledge Area: Communications.
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 # Status Reporting
@@ -28,6 +29,6 @@ numbers. Always show budget and schedule: if a measure has no data, mark it `[TB
 it under "Data I still need", and report no better than Amber. Separate facts from PM
 judgement. End with "Data I still need".
 
-Use the template at `.claude/skills/pmi-project-management/templates/status-report.md`, or
+Use the template at `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/status-report.md`, or
 the user's house template if they supply one (map their data into it exactly). Draft
 inline; for a pre-send check of a saved report, use the `status-reporter` agent.

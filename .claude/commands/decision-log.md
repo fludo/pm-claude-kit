@@ -1,6 +1,7 @@
 ---
 description: Record a project decision, or review the decision log
 argument-hint: [the decision and who made it, or leave blank to review]
+allowed-tools: Read(/${CLAUDE_PLUGIN_ROOT}/**)
 ---
 
 Add to or review the **decision log**.
@@ -17,7 +18,7 @@ was pasted here or ask the user questions.
 2. **Check it is a decision** — something actually decided, by a named person or body with
    the authority to decide it. If the input shows it was only discussed, or does not say
    who decided, do not log it as decided: list it under "Decisions pending" and ask.
-3. **Draft** using the structure in `.claude/skills/pmi-project-management/templates/decision-log.md`. Record the reason and the
+3. **Draft** using the structure in `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/decision-log.md`. Record the reason and the
    options considered only as far as the input states them; `[TBC]` otherwise. Never tidy
    a decision into something firmer than what was said.
 4. **Supersede, do not edit** — if the new decision changes an earlier one, add a new row
@@ -27,4 +28,9 @@ was pasted here or ask the user questions.
 6. **Route** — flag a decision that changes scope, schedule, or cost as needing a
    `/change-request`, and one that creates or removes a risk for the risk register.
 7. **Close** with "Assumptions / open questions".
-8. **Save** — offer `docs/decision-log.md`, summarising the rows added or superseded first.
+8. **Check** — unless *Ready-to-send checks* is `off` in the project context, run the
+   ready-to-send checklist at the end of the template against the draft. Fix what the
+   material supports — never by inventing content — then report every item as ❌ or ✅
+   with a one-line reason, failures first, in the language the user writes in (not the
+   Artifact language).
+9. **Save** — offer `docs/decision-log.md`, summarising the rows added or superseded first.

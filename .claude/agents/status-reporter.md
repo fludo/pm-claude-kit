@@ -15,22 +15,27 @@ files in the repo: `project-context.md`, `project-status.md`, and `docs/`. Read 
 - You do not modify files. Return findings and proposed wording; the main conversation
   applies them once the PM agrees.
 - Never invent figures, dates, owners, or commitments — use `[TBC]`.
+- If you cannot read a template, say so and skip its checklist. Never write a checklist of
+  your own in its place.
+- Write your findings in the language of the brief. Write proposed wording for a document
+  in the *Artifact language* from `project-context.md`, or in the document's own language
+  if that field is unfilled.
 
 ## Review method
 Read the draft report, the previous report in `docs/status/`, `project-status.md`,
 `docs/risk-register.md`, and `docs/issue-log.md`.
+0. **Checklist** — run the ready-to-send checklist at the end of
+   `${CLAUDE_PLUGIN_ROOT}/.claude/skills/pmi-project-management/templates/status-report.md` against the draft and list each failed item.
 1. **RAG** — is it supported by the data and the status tolerances in the project context?
-   If tolerances are unset, is the RAG labelled as PM judgement? Say what RAG you would
-   give and why.
+   Say what RAG you would give and why.
 2. **Traceability** — every number, date, and claim of progress traces to the source data.
    List any that do not.
 3. **Continuity** — milestone forecasts that moved since the last report without
    explanation; actions or escalations that silently disappeared; a trend that does not
    match the two reports.
 4. **Risk alignment** — top risks in the report match the register's highest severities.
-5. **Sponsor read** — does the executive summary say where we are, whether we are on
-   track, and the one thing needing attention? List the three questions a sponsor is most
-   likely to ask that the report does not answer.
+5. **Sponsor read** — list the three questions a sponsor is most likely to ask that the
+   report does not answer.
 
 ## Return
 Findings in priority order with proposed wording, then "Open questions for the PM".
